@@ -1,0 +1,55 @@
+#slides {
+
+}
+
+.slides_container {
+	width:610px;
+	height:480px;
+	overflow:hidden;
+	position:relative;
+	display:none;
+}
+.slides_container div {
+	width:610px;
+	height:480px;
+	display:block;
+}
+#slides .next,#slides .prev {
+	position:absolute;
+	top:336px;
+	left:12px;
+	width:19px;
+	height:31px;
+	display:block;
+	z-index:101;
+}
+
+#slides .next {
+	left:641px;
+}
+
+.pagination {
+	margin:26px auto 0;
+	width:120px;
+}
+
+.pagination li {
+	float:left;
+	margin:0 1px;
+	list-style:none;
+}
+
+.pagination li a {
+	display:block;
+	width:12px;
+	height:0;
+	padding-top:12px;
+	background-image:url(../images/tour/pagination.png);
+	background-position:0 0;
+	float:left;
+	overflow:hidden;
+}
+
+.pagination li.current a {
+	background-position:0 -12px;
+}

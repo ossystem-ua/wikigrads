@@ -1,0 +1,41 @@
+.single-member{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    width: 190px;
+}
+
+.last-column{
+    margin-right: 0px;
+}
+
+.member-name{
+    background-image: url(../images/member-name-bg.png);
+    color: white;
+    margin-top: 10px;
+    width: 190px;
+    height: 40px;
+}
+
+.member-name a{
+    color: white;
+    font-size: 14px;
+    margin: 15px 0 0 5px;
+    float: left;
+}
+
+.member-image{
+    height: 190px;
+    width: 190px;
+    text-align: center;
+}
+
+.status-icon {
+    float: right;
+    margin-right: 8px;
+    
+}
+
+.status-icon img{
+    margin-top: 15px;
+}

@@ -1,0 +1,22 @@
+<div class="content-pad">
+    <div id="about">
+        <p class="mission">
+            WikiGrads is a social learning network designed to help you learn with and from your classmates. Our mission is to help reform higher education by providing a student-centered platform to complement traditional lectures.
+        </p>
+    </div>
+    <div class="home-section border-bottom">
+        <?php echo image_tag('wg-home-2.png',array()) ?>
+        <p> Meet and connect with your classmates.</p>
+    </div>
+    
+    <div class="home-section border-bottom">
+        <?php echo image_tag('wg-home.png',array()) ?>
+        <p>Ask and answer questions.<br/>Discuss course topics.</p>
+    </div>    
+    
+    <div class="home-section">
+        <?php echo image_tag('wg-home-3.png',array()) ?>
+        <p>Share or exchange documents.</p>
+    </div>    
+    
+</div>

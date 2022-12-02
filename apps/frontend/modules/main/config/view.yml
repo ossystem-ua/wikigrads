@@ -1,0 +1,18 @@
+
+tourSuccess:
+
+  stylesheets:  
+    - bootstrap.css
+    - bootstrap-tour.css
+    
+tour2Success:
+    
+  stylesheets:  
+    - bootstrap.css
+    - bootstrap-tour.css
+    
+tour3Success:
+    
+  stylesheets:  
+    - bootstrap.css
+    - bootstrap-tour.css

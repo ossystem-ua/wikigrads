@@ -1,0 +1,45 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           School
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          school_school
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        display:
+          - name
+          - short_school
+          - twitter_list
+      list:
+        display:
+          - name
+          - twitter_list
+          - short_school
+          - created_at
+          - updated_at
+          - deleted_at
+
+      filter:
+        display:
+          - name
+          - short_school
+          - twitter_list
+
+      form:
+        display:
+          - name
+          - short_school
+          - twitter_list
+          - default_user_image
+          - is_lms
+          - lms_domain
+      edit: ~
+      new: ~

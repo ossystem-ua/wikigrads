@@ -1,0 +1,361 @@
+@media (max-width: 1280px) {
+    .content-pad {
+        width: 70%;
+    }
+}
+@media (max-width: 1200px) {
+    #wiki-block-main {
+        padding: 0 10px 0 10px;
+    }
+    
+    .wiki-form-col {
+        text-align: left;
+    }
+    
+    .wiki-input-login input, 
+    .wiki-input-password input {
+        width: 97%;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 1100px) {
+    #wiki-header .wiki-menu UL LI a{
+        font-size: 100%;
+        width: 90px;
+    }
+    
+    .wiki-win-block-doc {
+        font-size: 20px;
+    }
+    
+    .wiki-win-btup {
+        width: 100px;
+    }
+    
+    
+}
+
+@media (min-width: 0px) and (max-width: 1000px) {
+    #wiki-header .wiki-menu UL {
+        padding-right: 10px !important;
+    }
+    #wiki-header .wiki-menu UL LI {
+        display: block;
+        margin: 5px;
+    }
+    
+    #wiki-header .wiki-menu UL LI a {
+        width: auto;
+    }
+    
+    #wiki-header .wiki-form {    
+        vertical-align: top;
+    }
+    
+    #wiki-header .wiki-logo {
+        width: 40%;
+    }
+    
+    #wiki-header .wiki-menu {
+        width: 26%;
+    }
+    
+    #wiki-copy {
+        width: 48% !important;
+    }
+    
+    .wiki-caption-1 {
+        width: 45% !important;
+    }
+    
+    .wiki-form-reg {
+        width: 55% !important;
+    }
+    
+    .wiki-form-login {
+        vertical-align: middle !important;
+        width: 16% !important;
+    }
+    
+    .wiki-menu-login {
+        width: 40% !important;
+    }
+    
+    #wiki-header .wiki-menu-login UL LI {
+        display: inline-block !important;
+    }
+    
+    .wiki-logo-login {
+        width: 44% !important;
+        vertical-align: top !important;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 900px) {
+    .wiki-width-70 {
+        width: 50% !important;
+    }
+
+    .wiki-width-30 {
+        width: 50% !important;
+    }
+    
+    .wiki-button-student {
+        margin-top: 20px !important;
+    }
+    
+    .wiki-caption-1 {
+        width: 40% !important;
+    }
+    
+    .wiki-form-reg {
+        width: 60% !important;
+    }  
+    
+}
+@media (min-width: 0px) and (max-width: 870px) {
+    #wiki-header .wiki-menu-login UL LI {
+        display: block !important;        
+    }
+    .wiki-form-login {
+        vertical-align: top !important;
+    }
+    .wiki-menu-login {
+        width: 16% !important;
+    }
+    
+    .wiki-logo-login {
+        width: 68% !important;
+        vertical-align: top !important;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 800px) {
+    #wiki-header .wiki-menu {
+        width: 19%;
+    }
+    
+    #wiki-header .wiki-form {
+        width: 40%;
+    }
+    
+    .wiki-caption-1 {
+        width: 35% !important;
+    }
+    
+    .wiki-form-reg {
+        width: 65% !important;
+    }    
+}
+
+@media (min-width: 0px) and (max-width: 780px) {
+    .wiki-caption-1 {
+        display: block !important;
+        width: auto !important;
+        text-align: center !important;
+    }
+    
+    .wiki-form-reg {
+        display: block !important;
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 740px) {
+    #wiki-footer-menu a {
+        font-size: 16px !important;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 690px) {
+    #wiki-header .wiki-logo img {
+        width: 265px !important;
+    }
+    .wiki-form-col {
+        display: block !important;
+        width: 100%;
+    }
+    
+    .wiki-hide-1 {
+        display: none !important;
+    }
+
+    #wiki-header .wiki-menu UL LI a {
+        width: 86px !important;
+    }   
+    
+    #loginbutton {
+        width: auto !important;
+        height: 45px;
+    }
+    
+    .wiki-center {
+        text-align: center !important;
+    }
+    
+    .wiki-form-col .wiki-arrow-right {
+        width: 100% !important;
+    }
+    
+    div.wiki-hide-1 {
+        display: none !important;
+    }
+    
+    div#wiki-clear-row {
+        display: none !important;
+    }
+    
+    .wiki-main-page-col {
+        display: block !important;
+        width: 100% !important;
+        margin-bottom: 20px !important;
+    }
+    
+    .wiki-ivite-table {
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 660px) {
+    #wiki-footer-menu a {
+        font-size: 14px !important;
+    }
+    .wiki-logo-login, 
+    .wiki-menu-login,
+    .wiki-form-login {
+        display: block !important;
+        width: 100% !important;
+    }
+    
+    #wiki-header .wiki-menu UL LI a {
+        width: auto !important;
+    }
+    
+    .wiki-logo-auth-text {
+        width: auto !important;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 590px) {
+    #wiki-footer-block {
+        display: table !important;
+    }
+    
+    #wiki-footer-menu {
+        display: table-cell !important;
+        width: 30% !important;
+    }
+    
+    #wiki-copy {
+        display: table-cell !important;
+        width: 70% !important;
+    }
+    
+    #wiki-footer-menu ul li {
+        display: block !important;
+        width: 100% !important;
+        padding-left: 20px !important;
+    }
+    
+}
+
+@media (min-width: 0px) and (max-width: 520px) {
+    #wiki-header div {
+        display: block !important;
+    }
+    
+    .wiki-logo-auth {
+        display: table !important;
+    }
+    
+    #wiki-auth-pre .wiki-logo-auth-text,
+    #wiki-auth-pre .wiki-logo-auth-img {
+        display: table-cell !important;
+    }
+    
+    #wiki-header .wiki-logo {
+        width: 100% !important;
+    }
+    #wiki-header .wiki-logo img {
+        width: 100% !important;
+    }
+    
+    #wiki-header .wiki-menu UL LI a {
+        width: auto !important;
+    }
+    
+    #wiki-header .wiki-menu {
+        width: 100% !important;
+    }
+    
+    #wiki-header .wiki-form {
+        width: 100% !important;        
+    }
+    
+    div.wiki-hide-1 {
+        display: none !important;
+    }
+    
+    .wiki-form-col {
+        width: auto !important;
+    }
+    
+    form div#wiki-login {
+        display: table-cell !important;
+        width: 100% !important;
+    }
+    
+    div#wiki-clear-row {
+        display: none !important;
+    }
+
+    #wiki-content-main .wiki-button-instructor {    
+        width: 90% !important;
+    }
+    
+    .wiki-readmore-col-2 {
+        width: 200px !important;
+    }
+    
+    .wiki-readmore-col-2 a {
+        font-size: 30px !important;
+    }
+    
+    #wiki-header .wiki-menu UL {
+        padding-right: 10px !important;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 400px) {
+    #wiki-content-main .wiki-button-readmore div {
+        display: block !important;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 350px) {
+    #wiki-content-main .wiki-button-instructor,
+    #wiki-content-main .wiki-button-student {    
+        font-size: 100% !important;
+    }
+    
+    #wiki-content-main .wiki-button-student {
+        width: 70% !important;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 300px) {
+    #wiki-content-main .wiki-button-instructor a,
+    #wiki-content-main .wiki-button-student a{
+        padding: 2% !important;
+    }
+    
+    #wiki-footer-menu,
+    #wiki-copy {
+        display: block !important;
+        width: 100% !important;
+    }
+    
+    #wiki-copy {
+        text-align: right !important;
+    }
+}

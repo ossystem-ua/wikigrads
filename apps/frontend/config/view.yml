@@ -1,0 +1,41 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    #title:         Wikigrads
+    #description:   Wikigrads
+    #keywords:      Wikigrads
+    #language:      en
+    #robots:        index, follow
+    #og:title:       "WikiGrads | Academic Network"
+    #og:image:       http://wikigrads.ossystem.com.ua/images/new_design/logo_media.png
+    #og:description: Energize and expand classroom teaching and learning seamlessly.
+    #og:url:         http://ossystem.com.ua/
+    
+  stylesheets:
+      - ui-lightness/jquery-ui-1.10.3.custom.min.css
+      - new_style_main.css
+      - tour3.css
+      - lightbox.css
+      - responsive.css
+      - jquery.alerts.css
+
+  javascripts:
+      - lib/jquery-1.8.0.min.js
+      - jquery-ui-1.10.3.custom.min.js
+      - jquery.jcarousel.min.js
+      - wiki/main.js
+      - lightbox.js
+      - wiki/jquery.alerts.js
+#      - wiki/jquery-ui.js
+
+  has_layout:     true
+  layout:         layout
+tour2Success:
+    stylesheets:
+        - bootstrap.css
+        - bootstrap-tour.css

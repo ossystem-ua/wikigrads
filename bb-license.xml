@@ -1,0 +1,105 @@
+<blackboard-licenses product-name="LS-PS-CS"  client-id="522310"  product-owned-id="SF087069"  key="0C718C2ED475AE1ED500DB237E9642AE" >
+
+  <license component="enterprise.contentsystem"
+           expiration="2015-08-26 19:04:08 GMT"
+           key="2FED3D231A191B3FC6F82E409BED2D62">
+    <allow-server-ip value="any"/>
+  </license>
+  
+  <license component="basic.learning"
+           expiration="2015-08-26 19:04:08 GMT"
+           key="962E4D8F506D8B034468D0C6B6A52B2C">
+    <units name="max.courses" value="100"/>
+    <units name="max.courses.buttons" value="unlimited"/>
+    <allow-server-ip value="any"/>
+  </license>
+  
+  <license component="basic.platform"
+           expiration="2015-08-26 19:04:08 GMT"
+           key="A029A785066FAC12C4E345ABF7057721">
+    <units name="max.locales" value="unlimited"/>
+    <units name="max.users" value="150"/>
+    <param name="status" value="DEVELOPER"/>
+    <allow-server-ip value="any"/>
+  </license>
+  
+  <license component="building.blocks"
+           expiration="2015-08-26 19:04:08 GMT"
+           key="64450F2CBED8E7E0FEDC5922F4EE2682">
+    <allow-server-ip value="any"/>
+  </license>
+  
+  <license component="collab.server"
+           expiration="2015-08-26 19:04:08 GMT"
+           key="7607823D7DE8C59BAEF87CE72739C7CC">
+    <allow-server-ip value="any"/>
+  </license>
+  
+  <license component="enterprise.community"
+           expiration="2015-08-26 19:04:08 GMT"
+           key="D252FD4450663AEBBEBCDD1CC3C8F5A2">
+    <units name="max.organizations" value="100"/>
+    <allow-server-ip value="any"/>
+  </license>
+  
+  <license component="enterprise.learning"
+           expiration="2015-08-26 19:04:08 GMT"
+           key="D6E742DBF026A1BCA1A5D991F7E4278C">
+    <allow-server-ip value="any"/>
+  </license>
+  
+  <license component="enterprise.platform"
+           expiration="2015-08-26 19:04:08 GMT"
+           key="975451066F5613FF1DDD24B616F57DF7">
+    <allow-server-ip value="any"/>
+  </license>
+  
+  <license component="enterprise.portal"
+           expiration="2015-08-26 19:04:08 GMT"
+           key="4B16AD7C0228B5B5E87D2691BD773D35">
+    <allow-server-ip value="any"/>
+  </license>
+  
+  <license component="integration.apis"
+           expiration="2015-08-26 19:04:08 GMT"
+           key="8BB3237D35EEAF406F34EF3A256B5AB5">
+    <allow-server-ip value="any"/>
+  </license>
+  
+  <license component="market.pro"
+           expiration="2015-08-26 19:04:08 GMT"
+           key="7E330F7657A05FEF6F743DF9B831E0CF">
+    <allow-server-ip value="any"/>
+  </license>
+  
+  <license component="observer.management"
+           expiration="2015-08-26 19:04:08 GMT"
+           key="0A2CC6A2E011F466ABAC7EB8B5749CCB">
+    <allow-server-ip value="any"/>
+  </license>
+  
+  <license component="security.ssl"
+           expiration="2015-08-26 19:04:08 GMT"
+           key="28A24C2163D54AB73FB0FE082F00FE63">
+    <allow-server-ip value="any"/>
+  </license>
+  
+  <license component="system.reporting"
+           expiration="2015-08-26 19:04:08 GMT"
+           key="C51FF31925AE408DD03D267763DAD387">
+    <allow-server-ip value="any"/>
+  </license>
+  
+  <license component="user.profile.management"
+           expiration="2015-08-26 19:04:08 GMT"
+           key="242103346398B9D9AE4FAC711A96940E">
+    <allow-server-ip value="any"/>
+  </license>
+  
+  <license component="webeq"
+           expiration="2015-08-26 19:04:08 GMT"
+           key="1D878DBAE612157A5536AFD73D8749E2">
+    <allow-server-ip value="any"/>
+  </license>
+  
+</blackboard-licenses>

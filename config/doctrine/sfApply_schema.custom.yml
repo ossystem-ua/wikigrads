@@ -1,0 +1,31 @@
+sfGuardUserProfile:
+  tableName: sf_guard_user_profile
+  columns:
+    user_id: { type: integer, notnull: true }
+    email: { type: string(80) }
+    fullname: { type: string(80) }
+    image: { type: string(255) }
+    birthday: { type: string(20) }
+    about: { type: clob }
+    activity: { type: clob }
+    validate: { type: string(17) }
+    is_staff: { type: boolean, notnull: true, default: false }
+    is_tutor: { type: boolean, notnull: true, default: false }
+    email_post: { type: boolean, notnull: true, default: true }
+    email_reply: { type: boolean, notnull: true, default: false }
+    email_from: { type: boolean, notnull: true, default: false }
+    email_private: { type: boolean, notnull: true, default: false }
+    enter_code: { type: boolean, notnull: true, default: false }
+    has_modified_profile: { type: boolean, notnull: true, default: false }
+  actAs:
+    Timestampable:
+    SoftDelete:
+  # Don't forget this!
+  relations:
+    User:
+      class: sfGuardUser
+      local: user_id
+      foreign: id
+      foreignType: one
+      type: one
+      onDelete: CASCADE

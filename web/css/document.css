@@ -1,0 +1,136 @@
+.document-header{
+    float: left;
+    clear: both;
+    width: 888px;
+}
+.document-header h3{
+    float: left;
+}
+
+#document-upload-button{
+    float: right;
+}
+
+#form-document{
+    
+}
+
+#form-document-add{
+}
+
+
+
+#document-field-name{
+    width: 470px;
+    
+}
+
+#document-field-name input{
+    width: 450px;
+}
+
+
+#document-field-file{
+    float: left;
+}
+
+#document-field-file label{
+    float: left;
+    margin-right: 5px; 
+}
+
+
+#document-field-course{
+    float: left;
+    margin-left: 25px;
+}
+
+#document-field-course select{
+    width: 250px;
+    margin-left: 20px;
+}
+
+#document-field-description{float: left;}
+
+#document-field-description textarea{
+    margin-top: 20px;
+    width: 420px;
+    height: 100px;
+    resize: none;
+}
+
+#document-submit-btn{
+    float: right;
+    margin-top: 100px;
+}
+
+#document-list{
+    
+    
+}
+
+  
+#document-tabs {
+    padding: 0;
+    float: left;
+    width: 100%;
+    margin-bottom:29px;
+}
+.single-document{
+    padding: 10px 0px;
+    border-bottom: 1px solid;
+    float: left;
+    width: 100%;
+}
+
+.document-top-section{
+    float: left;
+    width: 100%;
+    font-size: 1.3em; 
+    
+}
+
+.document-course{
+    color: #000 !important;
+  
+    float: left;
+}
+
+.document-name{
+    float: left;
+    margin-left: 10px;
+}
+
+.document-description{
+    width: 100%;
+    float: left;
+    margin: 10px 0;
+}
+
+.document-bottom-section{
+    float: left;
+    width: 100%;
+}
+
+.document-user{
+    float: left;
+}
+
+.document-user img{
+    float: left;
+}
+
+.document-user-info{
+    float: left;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.document-action{
+    float: right;
+}
+
+.document-download{
+    float: right;
+}
+

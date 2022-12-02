@@ -1,0 +1,38 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           UserSchool
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          user_school
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+        display:
+          - user
+          - school
+          - major
+          - class_year
+      filter:
+        display:
+          - user_id
+          - school_id
+          - major
+          - class_year
+      form:
+        display:
+          - user_id
+          - school_id
+          - major
+          - class_year
+          - primary_department_id
+          - secondary_department_id
+      edit:    ~
+      new:     ~

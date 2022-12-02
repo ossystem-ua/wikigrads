@@ -1,0 +1,196 @@
+/* buncha mallarkey to style select menus and preserve onselect behaviors */
+.global-form-style .grey-input{
+    background: url("../images/bg-post-msg-ev1.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 40px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.global-form-style .grey-input input, 
+.global-form-style select {
+	-webkit-appearance: none;
+	-moz-appaearance: none;
+	appearance: none;
+    border: medium none;
+    color: #666666;
+    font-family: Georgia,serif;
+    font-size: 13px;
+    font-style: italic;
+    margin-left: 10px;
+    margin-top: 12px;
+    width: 250px;
+    xoverflow: hidden;
+}
+
+.global-form-style input, 
+.global-form-style select {
+    background-color: transparent;
+    float: left;
+}
+
+.global-form-style select {
+    width: 260px;
+    height: 40px; 
+    margin: 0;
+    padding: 10px 0px 0 8px;
+    background: url(../images/select-spr.png) no-repeat;
+    outline: 0;
+    overflow: hidden;
+
+    -webkit-appearance: button;
+    -moz-appearance: none;
+    appearance: button;
+    
+}
+
+
+
+/*////////////////////////////////////////////////////////
+//                                                     //
+// FORM INPUT STYLE TRICKERY                          //
+//                                                   //
+////////////////////////////////////////////////////*/
+  textarea {
+    width: 260px; 
+    height: 170px; 
+    padding: 0; 
+    margin: 0;
+    font-family: Georgia,serif; 
+    font-size: 13px; color: #666666; 
+    font-style: italic; 
+    xtext-shadow: 0px -1px 0px #333333; 
+  }
+    textarea:-webkit-input-placeholder  {
+      color: #a1b2c3; 
+      text-shadow: 0px -1px 0px #38506b;  
+    }
+    textarea:-moz-placeholder {
+      color: #a1b2c3; 
+      text-shadow: 0px -1px 0px #38506b; 
+    }
+
+  input.shade:focus, textarea.shade:focus {
+    background: #b6b6b6;
+    background: -moz-linear-gradient(top, #999999 0%, #b6b6b6 8px); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#999999), color-stop(6%,#b6b6b6)); /* webkit */
+  }
+
+  input.shade[type=text],input.shade[type=password] {
+    width: 210px; height: 35px; padding:0 10px; /*padding: 5px 20px 0px 20px; margin: 0 0 8px 0; */
+    background: #cccccc;
+    background: -moz-linear-gradient(top, #999999 0%, #cccccc 8px); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#999999), color-stop(6%,#cccccc)); /* webkit */
+    border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px;
+    /*-moz-box-shadow: 0px 2px 0px #ffffff;-webkit-box-shadow: 0px 1px 0px #ffffff;*/
+    font-family: Georgia,serif; font-size: 13px; color: #808080; font-style: italic; xtext-shadow: 0px -1px 0px #333333; 
+  }
+
+
+    input.shade:-webkit-input-placeholder  {
+      color: #ff0000; text-shadow: 0px -1px 0px #38506b;  
+    }
+    input.shade:-moz-placeholder {
+      color: #ff0000; text-shadow: 0px -1px 0px #38506b; 
+    }
+
+
+
+  .checkbox {
+    width: 19px;
+    height: 19px;
+    padding: 0 5px 0 0;
+    background: url(../images/radio.png) no-repeat;
+    display: block;
+    clear: left;
+    float: left;
+  }
+  
+  .expandable, .xexpandable {
+    display: none;
+  }
+  
+  input.wg[type=text] {
+      padding:10px;
+      border:1px solid #aaa;
+      border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px;
+      -webkit-box-shadow: inset 2px 2px 2px 0px #dddddd;
+      -moz-box-shadow: inset 2px 2px 2px 0px #dddddd;
+      box-shadow: inset 2px 2px 2px 0px #dddddd;
+      font-family: Georgia,serif; font-size: 13px; color: #808080; font-style: italic;  
+  }
+
+/**/
+/*  custom file input trickery  */
+/*  http://filamentgroup.com/lab/jquery_custom_file_input_book_designing_with_progressive_enhancement/ */
+/**/
+
+  .customfile-input { position: absolute; height: 40px; cursor: pointer; background: transparent; border: 0; opacity: 0; -moz-opacity: 0; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0); z-index: 999;  }
+  
+  .customfile {
+  	width: 240px;
+  	height: 36px;
+  	background: #686868 url(../images/bg-post-msg-ev1.png) 0 0 no-repeat;
+  	cursor: pointer;
+  	overflow: hidden;
+  	padding: 2px;
+  	border: 0;
+  	-moz-border-radius:4px; -webkit-border-radius:4px; border-radius:4px;  position: relative;
+  }
+  #applyform .customfile {
+  	width: 410px;
+  }
+  .customfile-disabled {
+  	opacity: .5;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+	cursor: default;
+  }
+  .customfile-feedback {
+  	display: block;
+  	margin: 1px 1px 1px 5px;
+    color: #686868;
+    font-family: Georgia,serif;
+    font-size: 10px;
+    font-style: italic;
+  	padding: 10px 0 0 8px;
+  }
+  .customfile-feedback-populated {
+  	font-style: normal;
+  	font-weight: bold;
+  	padding-left: 20px;
+  	background: url(../images/icon-generic.gif) left 10px no-repeat;
+  }
+  .customfile-button {
+  	background: #686868 url(../images/bg-submit.gif) bottom repeat-x;
+  	color: #fff;
+  	float: right;
+  	width: 52px;
+  	margin: 8px 8px 0 8px;
+  	padding: 4px 8px 4px 8px;
+  	text-align: center;
+  	text-decoration: none;
+  	font-size: 13px;
+  	-moz-border-radius:4px; -webkit-border-radius:4px; border-radius:4px;
+  }
+  .customfile-hover .customfile-button, .customfile-focus .customfile-button  {
+  	color:#111;
+	background: #aaa url(../images/bg-btn.png) bottom repeat-x;
+  	padding: 4px 8px 4px 8px;
+  }
+  .customfile-focus .customfile-button { outline: 1px dotted #ccc;  }
+
+  .customfile-ext-jpg, .customfile-ext-gif, .customfile-ext-png, .customfile-ext-jpeg, .customfile-ext-bmp { background-image: url(../images/icon-image.gif);}
+  .customfile-ext-mp3, .customfile-ext-mp4, .customfile-ext-mov, .customfile-ext-swf, .customfile-ext-wav, .customfile-ext-m4v { background-image: url(../images/icon-media.gif);}
+  .customfile-ext-zip, .customfile-ext-tar, .customfile-ext-sit { background-image: url(../images/icon-zip.gif);}
+
+.select-container input {  
+    color: #666666;
+    font-size: 28px;
+    line-height: 26px;
+    height: 34px;
+    width: 180px;  
+}
+
+.block-hide {
+    display: none;
+}

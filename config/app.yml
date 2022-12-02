@@ -1,0 +1,3 @@
+all:
+  sf_guard_plugin:
+    algorithm_callable: md5

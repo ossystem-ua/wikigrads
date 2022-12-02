@@ -1,0 +1,10 @@
+uploads/
+apps/backend__11/
+web/FirePHP
+log/
+cache/*
+nbproject/
+lib/vendor/Zend/*
+*.orig
+.hgignore~
+apps/frontend/config/factories.yml

@@ -1,0 +1,209 @@
+#left-nav-container {
+  /* defined in layout.css */ 
+}
+
+  #logo {
+    background-color: #343434;
+    height: 86px;
+  }
+    #logo img { margin-left:10px;}
+  #nav-content-container {
+    margin: 20px;
+  }
+
+  .lnavlink {
+    padding-top: 8px;
+  }
+  .lnavhr {
+    padding-top: 16px;
+
+  }
+  #applybutton {
+    padding-top: 16px;
+  }
+
+  
+/*////////////////////////////////////////////////////////
+//                                                     //
+// QUICK USER INFO                                    //
+//                                                   //
+////////////////////////////////////////////////////*/    
+  #qui-heading {
+    position: relative;
+    background: url('../images/lnav-bg-nametag.png') left top no-repeat;
+    width: 281px; height: 40px;
+    z-index: 11;
+  }
+  #qui-heading .name {
+    position: relative;
+    left: 19px;
+    top: 10px;
+    font-family: 'Crete Round', Georgia, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+  }
+    #qui-heading .name a {
+      text-decoration: none;
+      color: white;
+    }
+  #qui-heading .btn-toggle-container {
+    position: absolute;
+    top: 10px; right: 30px;
+  }
+  #lnavuserimage {
+    position: relative;
+    width: 250px;
+    text-align: center;
+    background: white;
+    z-index: 20;
+  }
+
+  #left-nav-container #userbio {
+    position: relative;
+    background: url('../images/bg-lnavdrop.jpg') #d6d6d6 no-repeat;
+    width: 222px;
+    font-family: Georgia, serif;
+    color: #666666;
+    font-size: smaller;
+    font-style: italic;
+    padding: 14px;
+    margin-top: -3px; margin-left: 0px;
+    border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px;
+  }
+  #userbio ul {
+    list-style-type: none;
+    padding: 0; margin: 0;
+  }
+  #userbio ul li {
+    /*margin-bottom: 8px; margin-top: 8px;*/
+    line-height: 2em;
+  }
+  #userbio #edprofilebutton {
+    text-align: center;
+    margin-top: 8px; margin-bottom: 8px;
+  }
+
+  #left-nav-container .navlinksloggedin {
+    width: 245px;
+    border: 3px solid #333333;
+    margin-top: 8px;
+    background-color: #f1f1f1;
+    border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px;
+    padding: 8px 0 8px 0;
+  }
+    #left-nav-container .navlinksloggedin a:link, 
+    #left-nav-container .navlinksloggedin a:visited {
+        color:#000;
+        text-decoration:none;
+        
+    }
+    #left-nav-container .navlinksloggedin div {
+      line-height: 2em;
+      padding: 0 8px 0 16px;
+      font-style: italic;
+    }
+    
+    #left-nav-container .navlinksloggedin div:hover {
+      background-color: #d5d5d5;
+    }
+    #left-nav-container .navlinksloggedin div.current {
+      background: url('../images/bg-nav2.png') no-repeat 2px 4px;
+      font-style: normal;
+    }
+
+/*////////////////////////////////////////////////////////
+//                                                     //
+// AMBASSADOR TEMP                                    //
+//                                                   //
+////////////////////////////////////////////////////*/  
+
+#left-nav-container .navlinksloggedin#ambassadors {
+	position: relative;
+	bottom: -24px;
+	width: 229px;
+	padding: 8px;
+	font-size: 12px;
+	margin-bottom: 88px;
+}
+#left-nav-container .navlinksloggedin#ambassadors H4 {
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	color: #86db65;
+	line-height: 2em;
+}
+#left-nav-container .navlinksloggedin#ambassadors P {
+	line-height: 1em;
+	margin-top: 1em; 
+}
+
+/*////////////////////////////////////////////////////////
+//                                                     //
+// LOGIN                                              //
+//                                                   //
+////////////////////////////////////////////////////*/  
+#login input:focus, #login textarea:focus {
+  background: #585858;
+  background: -moz-linear-gradient(top, #404040 0%, #585858 8px); /* firefox */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#404040), color-stop(20%,#585858)); /* webkit */
+  outline: none;
+}
+  #login #password {
+    width: 120px;
+  }
+    #login input[type=text],#login input[type=password] {
+    background: #585858;
+    background: -moz-linear-gradient(top, #585858 0%, #727272 8px); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#585858), color-stop(20%,#727272)); /* webkit */
+    /*-moz-box-shadow: 0px 2px 0px #acacac;
+    -webkit-box-shadow: 0px 1px 0px #acacac;*/
+    color: #e0e0e0; 
+    text-shadow: 0px -1px 0px #334f71; 
+  }
+
+  #login #logintag {
+    margin-top: 8px;
+    margin-bottom: 16px;
+  }
+  #logintag {
+    color: #e8e8e8;
+    font-style: italic;
+  }
+  #login #loginremember {
+    font-family: Georgia, serif;
+    font-size: 9px;
+    font-style: italic;
+    color: #e8e8e8;
+    margin: 8px 0px 12px 0px;
+    line-height:16px;
+  }
+#login #loginremember .checkbox {
+  
+}
+
+  #login #loginremember a:link, #login #loginremember a:visited {
+      color: #E8E8E8; 
+      text-decoration: none; 
+  }
+  #login #loginremember .forgot {
+    float: right;
+  }
+  #login #loginusername {
+  }
+  #login #loginpassword {
+    margin-top: 16px;
+    float: left;
+  }
+  #loginbutton {
+    margin-top: 18px;
+    float: right;
+    
+  }
+
+#left-nav-or {
+  color: #e8e8e8;
+  font-style: italic;
+  text-align: center;
+  margin-top: 20px;
+}

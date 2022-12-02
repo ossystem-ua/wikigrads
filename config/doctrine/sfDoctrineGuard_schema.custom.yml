@@ -1,0 +1,49 @@
+sfGuardUser:
+  relations:
+    Courses:
+      class: Course
+      local: user_id
+      foreign: course_id
+      refClass: UserCourse
+    Events:
+      class: Event
+      local: user_id
+      foreign: event_id
+      refClass: UserEvent
+    Friends:
+      class: sfGuardUser
+      local: user_id
+      foreign: friend_id
+      refClass: Friend
+    Schools:
+      class: School
+      local: user_id
+      foreign: school_id
+      refClass: UserSchool
+      onDelete: CASCADE
+    Profile:
+      class: sfGuardUserProfile
+      local: id
+      foreign: user_id
+      onDelete: CASCADE
+    InstructorCourse:
+      class: InstructorCourse
+      local: id
+      foreign: user_id
+      refClass: InstructorCourse
+      onDelete: CASCADE
+    sfGuardUserProfile:
+      class: sfGuardUserProfile
+      local: id
+      foreign: user_id
+    sfGuardRememberKey:
+      class: sfGuardRememberKey
+      local: id
+      foreign: user_id
+  columns:
+    first_name: { type: string(80), notnull: true }
+    last_name: { type: string(80), notnull: true }
+    lms_id: { type: string(255), notnull: false, default: null }
+    is_lms: { type: int(1), notnull: true, default: 0 }
+    lms_email: { type: string(255), notnull: false, default: null }
+    lms_domain: { type: string(255), notnull: false, default: null }

@@ -1,0 +1,439 @@
+Issue:
+  columns:
+    description: { type: clob, notnull: true }
+    information: { type: clob, notnull: true }
+    user_id: { type: integer, notnull: true }
+    from_page: { type: clob, notnull: true }
+  relations:
+    User:
+      class: sfGuardUser
+      local: user_id
+      foreign: id
+      foreignAlias: User
+  actAs:
+    Timestampable:
+
+#####
+# Events
+###
+
+Event:
+  columns:
+    course_id: { type: integer, notnull: true }
+    user_id: { type: integer, notnull: true }
+    name: { type: string(100), notnull: true }
+    description: { type: clob, notnull: true }
+    location: { type: clob, notnull: true }
+    start_date: { type: timestamp, notnull: true }
+    end_date: { type: timestamp, notnull: true }
+  actAs:
+    Timestampable:
+    SoftDelete:
+  relations:
+    Course:
+      local: course_id
+      foreign: id
+    sfGuardUser:
+      local: user_id
+      foreign: id
+
+UserEvent:
+  columns:
+    user_id: { type: integer}
+    event_id: { type: integer}
+    is_attend: { type: boolean, notnull: true, default: true }
+  actAs:
+    Timestampable:
+  relations: # explicit
+    User:
+      local: user_id
+      foreign: id
+    Event:
+      local: event_id
+      foreign: id
+
+#####
+# School
+###
+
+AcademicTerm:
+  columns:
+    term: { type: enum, values: ['Spring', 'Summer', 'Fall', 'Winter'] }
+    year: { type: integer(2), notnull: true }
+    is_active: { type: boolean, notnull: true, default: true }
+  actAs:
+    Timestampable:
+    SoftDelete:
+
+AcademicTermCourse:
+  columns:
+    academic_term_id: { type: integer }
+    course_id: { type: integer }
+  actAs:
+    Timestampable:
+  relations: # explicit
+    AcademicTerm:
+      local: academic_term_id
+      foreign: id
+    Course:
+      local: course_id
+      foreign: id
+
+School:
+  columns:
+    name: { type: string(100), notnull: true }
+    short_school: { type: string(255), notnull: false  }
+    twitter_list: { type: string(255), notnull: true }
+    first_friend_id: { type: integer }
+    default_user_image: { type: string(255) }
+    timezone: { type: string(255), notnull: true }
+    is_lms: { type: integer(1), default: 0 }
+    lms_domain: { type: string(255), default: NULL }
+  actAs:
+    Timestampable:
+    SoftDelete:
+    Sluggable:
+      unique: true
+      fields: [name]
+  relations:
+    sfGuardUser:
+      alias: FirstFriend
+      local: first_friend_id
+      foreign: id
+      type: one
+
+UserSchool:
+  columns:
+    user_id: { type: integer }
+    school_id: { type: integer }
+    major: { type: string(255) }
+    primary_department_id: { type: integer, notnull: false }
+    secondary_department_id: { type: integer, notnull: false }
+    class_year: { type: integer(2), notnull: false }
+  actAs:
+    Timestampable:
+  relations: # explicit
+    User:
+      class: sfGuardUser
+      local: user_id
+      foreign: id
+      onDelete: CASCADE
+    School:
+      local: school_id
+      foreign: id
+    PrimaryDepartment:
+      class: Department
+      local: primary_department_id
+    SecondaryDepartment:
+      class: Department
+      local: secondary_department_id
+
+Department:
+  columns:
+    school_id: { type: integer, notnull: true }
+    name: { type: string(100), notnull: true }
+    alias: { type: string(20) }
+    sort: {type: integer(2)}
+  actAs:
+    Timestampable:
+    SoftDelete:
+  relations:
+    School:
+      local: school_id
+      foreign: id
+# instructor_id
+Course:
+  columns:
+    department_id: { type: integer, notnull: true }
+    name: { type: string(255), notnull: true }
+    code: { type: string(10), notnull: true }
+    instructor: { type: string(255) }
+    instructor_id: { type: integer, notnull: true }
+    category: { type: string(255)}
+    subject_id: { type: integer }
+    access: { type: string(10), notnull: false }
+  actAs:
+    Timestampable:
+    SoftDelete:
+  relations:
+    Department:
+      local: department_id
+      foreign: id
+    User:
+      class: sfGuardUser
+      local: instructor_id
+      foreign: id
+    Subject:
+      local: subject_id
+      foreign: id
+  indexes:
+    code:
+      fields: [code]
+
+InstructorCourse:
+  columns:
+    user_id: { type: integer }
+    course_id: { type: integer }
+    access: { type: string(255)}
+  actAs:
+    Timestampable:
+  relations:
+    User:
+      class: sfGuardUser
+      local: user_id
+      foreign: id
+      onDelete: CASCADE
+    Course:
+      local: course_id
+      foreign: id
+
+UserCourse:
+  columns:
+    user_id: { type: integer }
+    course_id: { type: integer }
+    object_name: { type: string(255), notnull: true }
+    access: { type: string(255), notnull: false }
+  actAs:
+    Timestampable:
+  relations: # explicit
+    User:
+      class: sfGuardUser
+      local: user_id
+      foreign: id
+    Course:
+      local: course_id
+      foreign: id
+
+UserSubject:
+  columns:
+    user_id: { type: integer, notnull: false }
+    subject_id: { type: integer, notnull: false }
+  actAs:
+    Timestampable:
+  relations: # explicit
+    User:
+      class: sfGuardUser
+      local: user_id
+      foreign: id
+    Subject:
+      local: subject_id
+      foreign: id
+
+Document:
+  columns:
+    course_id: { type: integer, notnull: true }
+    user_id: { type: integer, notnull: true }
+    file: { type: string(255), notnull: true }
+    name: { type: string(100), notnull: true }
+    description: { type: clob }
+    date: { type: timestamp }
+  actAs:
+    Timestampable:
+    SoftDelete:
+  relations:
+    Course:
+      local: course_id
+      foreign: id
+    User:
+      class: sfGuardUser
+      local: user_id
+      foreign: id
+
+UserAttachment:
+  tableName: user_attachment
+  columns:
+    user_id: { type: integer }
+    file: { type: string(255) }
+    url: { type: string(255) }
+    name: { type: string(100) }
+  relations:
+    User:
+      class: sfGuardUser
+      local: user_id
+      foreign: id
+
+UserLike:
+  tableName: user_like
+  columns:
+    user_id: { type: integer }
+    object_id: { type: integer }
+    count_like: { type: integer }
+
+#####
+# Friend
+###
+
+Friend:
+  columns:
+    user_id: { type: integer }
+    friend_id: { type: integer }
+  actAs:
+    Timestampable:
+  relations:
+    User:
+      class: sfGuardUser
+      local: user_id
+    Friend:
+      class: sfGuardUser
+      local: friend_id
+
+FriendRequest:
+  columns:
+    user_id: { type: integer }
+    friend_id: { type: integer }
+    status: {type: enum, values: ['Pending','Accepted','Declined'], notnull: false}
+    message: {type: string(255), notnull: true}
+  actAs:
+    Timestampable:
+  relations:
+    User:
+      class: sfGuardUser
+      local: user_id
+    Friend:
+      class: sfGuardUser
+      local: friend_id
+
+
+
+### posts and comments on wall, photos, group wall ###
+Post:
+  tableName: post
+  actAs:
+    Timestampable:
+    SoftDelete:
+  columns:
+    object_id: { type: integer, notnull: true }
+    object_name: { type: string(255), notnull: true }
+    parent_post_id: { type: integer }
+    count_like:  { type: integer }
+    user_id: { type: integer, notnull: true }
+    attachment_id: { type: integer, notnull: true }
+    attachment_url: { type: string(255), notnull: true }
+    ftype: { type: integer, notnull: true }
+    content: { type: array, notnull: true }
+    is_pinned: { type: boolean, notnull: false }
+    flagget:  { type: boolean, notnull: false }
+    everyone: { type: boolean, notnull: false }
+    ftext:  { type: string(255), notnull: true }
+    document_id:  { type: integer, notnull: true }
+    private:  { type: integer, notnull: false }
+    link_data_id: { type: integer, notnull: false, default: 0 }
+  relations:
+    UserAttachment:
+      class: UserAttachment
+      local: user_attachment_id
+    User:
+      class: sfGuardUser
+      local: user_id
+    ParentPost:
+      class: Post
+      local: parent_post_id
+    LinkData:
+      class: LinkData
+      local: link_data_id
+  indexes:
+    user_id:
+      fields: user_id
+      unique: false
+    parent_post_id: 
+      fields: parent_post_id
+      unique: false
+    private:
+      fields: private
+      unique: false
+    object_id: 
+      fields: object_id
+      unique: false
+    deleted_at: 
+      fields: deleted_at
+      unique: false
+    private_deleted_at: 
+      fields: [deleted_at, private]
+      unique: false
+    
+    
+
+###Data of the attachment link to the post or comment
+LinkData:
+  actAs:
+    SoftDelete:
+  columns:
+    url: { type: string(255), notnull: true }
+    img: { type: string(255) }
+    title: { type: string(255), notnull: true }
+    description: { type: array }
+    host: { type: string(255), notnull: true }
+
+Notification:
+  actAs:
+    Timestampable:
+    SoftDelete:
+  columns:
+    object_id: { type: integer, notnull: true, unsigned: true }
+    object_name: { type: string(255), notnull: true }
+    related_object_id: { type: integer, notnull: true, unsigned: true }
+    related_object_name: { type: string(255), notnull: true }
+    template: {  type: string(255), notnull: true  }
+    action: { type: enum, values: ['Add','Delete'], notnull: false }
+    type: { type: enum, values: ['Classmate','Friend','Everyone'], notnull: false }
+
+UserNotification:
+  actAs:
+    Timestampable:
+  columns:
+    user_id: { type: integer}
+    notification_id: { type: integer}
+    is_seen: { type: boolean, notnull: true, default: true }
+  relations:
+    User:
+      class: sfGuardUser
+      local: user_id
+    Notification:
+      class: Notification
+      local: notification_id
+
+UserTracker:
+  columns:
+    user_id: { type: integer, notnull: true }
+    course_id: { type: integer, notnull: true }
+    notification_id: { type: integer, notnull: true}
+    new_posts: { type: integer, notnull: true, default: 0 }
+    new_classmates: { type: integer, notnull: true, default: 0 }
+    private: {type: integer, notnull: false, default: 0 }
+  relations:
+    User:
+      class: sfGuardUser
+      local: user_id
+    Course:
+      local: course_id
+      foreign: id
+    Notification:
+      class: Notification
+      local: notification_id
+    Post:
+      local: private
+      foreign: private
+
+Subject:
+  columns:
+    name: { type: string(255), notnull: true }
+  actAs:
+    Timestampable:
+    SoftDelete:
+
+LMSDomainKeySecret:
+  tableName: lms_domain_key_secret
+  columns:
+    domain: { type: bigint(20) }
+    key_s: { type: string(128) }
+    secret: { type: string(128) }
+  actAs:
+    Timestampable:
+    SoftDelete:
+  relations:
+    School:
+      class: school
+      local: domain
+      foreign: id
+      onDelete: CASCADE
+      onUpdate: CASCADE

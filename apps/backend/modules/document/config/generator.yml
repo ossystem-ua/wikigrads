@@ -1,0 +1,33 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Document
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          document_document
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list: 
+        display:
+          - name
+          - user
+          - created_at
+          - updated_at
+          - deleted_at
+      filter:
+        display:
+          - name
+          - user_id
+      form:
+        display:
+          - course_id
+          - name
+      edit:    ~
+      new:     ~

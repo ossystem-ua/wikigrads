@@ -1,0 +1,1168 @@
+@media (max-width: 1600px) {
+    .content-pad {
+        width: 70%;
+    }
+    #wiki-math-editor {
+        width: 41%;
+    }
+}
+@media (max-width: 1280px) {
+    .content-pad {
+        width: 70%;
+    }
+    #wiki-math-editor {
+        width: 55%;
+    }
+}
+
+@media (max-width: 1024px) {
+    #wiki-math-editor {
+        width: 70%;
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 1152px) {
+    #wiki-block-main {
+        min-width: 985px;
+    }
+    /*header*/
+    #wiki-header {
+        height: 50px;
+        max-width: 1024px;
+        min-width: 985px;
+    }
+    .whyWiki-download {
+        width: 225px;
+    }
+    .wiki-menu-no-auth-ul .about {
+        margin-left: 30px;
+    }
+    .wiki-menu-no-auth-ul .about a {
+        width: 50px;
+    }
+    .wiki-input-forgot a {
+        font-size: 12px;
+    }
+    #wiki-header .wiki-menu {
+        padding-top: 10px;
+    }
+    #wiki-header .wiki-logo {
+        padding: 0 0 0 15px;
+    }
+    #wiki-header .wiki-form-login {
+        padding-top: 5px;
+    }
+    .wiki-menu-login {
+        width: 70%;
+    }
+    
+    /*footer*/
+    #wiki-footer-block {
+        width: 100%;
+        /*max-width: 1024px;*/
+    }
+    #wiki-footer-menu {
+        width: 65%;
+        padding-left: 15px;
+    }
+    #wiki-copy {
+        width: 32%;
+    }
+    #wiki-footer-menu ul li a {
+        font-size: 17px;
+    }
+    /*pages 'about' and 'privacy and terms'*/
+    .content-pad {
+        width: 65%;
+    }
+    .wiki-about-menu {
+        width: 220px;
+    }
+    #Privacy-police {
+        margin-top: 2px;
+    }
+    #introduction {
+        margin-top: 0px;
+    }
+    .wiki-about-menu ul li:hover, .wiki-about-menu ul li.active {
+        background: url("/images/new_design/about_menu_arrow.png") no-repeat scroll 205px 2px rgba(0, 0, 0, 0);
+    }
+    .wiki-menu-no-auth-ul .how-it-works a {
+        width: 100px;
+    }
+    
+    /*content*/
+    #wiki-win {
+        width: 70%;
+    }
+    .wg-required {
+        margin-left: 7px;
+    }
+    .add-to-conv-holder > div.text-area {
+        width: 75%;
+    }
+    .add-to-conv-holder textarea {
+        padding: 9px 0 0 5px;
+        height: 29px;
+    }
+    .wiki-caption-1 {
+        font-size: 35px;
+        background-position: right 10px;
+    }
+    #privacy button {
+        padding: 7px 25px;
+        margin-left: 10px;
+    }
+    
+    .my-students-table {
+        width: 900px;
+    }
+    .my-students-table tr th {
+        font-size: 14px;
+    }
+    
+    /*start style Why Wikigrads page*/
+    .popUpClose {
+        right: -913px;
+    }
+    
+    #figure1 #figure1-content,
+    #figure2 #figure2-content,
+    #figure3 #figure3-content,
+    #figure4 #figure4-content,
+    #figure5 #figure5-content,
+    #figure6 #figure6-content,
+    #figure7 #figure7-content {
+        margin: 10px auto 0px auto;
+        width: 905px;
+        height: 568px;
+        padding: 10px 30px;
+
+    }
+    .f1-col3 {
+        width: 70%;
+    }
+    .f1-line2 {
+        height: 160px;
+    }
+    .f1-line5, .f1-line6 {
+        height: 140px;
+    }
+    .f1-content-block, .f2-content-block, .f3-content-block,
+    .f4-content-block, .f5-content-block {
+        height: 525px;
+    }
+    .f2-col4 {
+        width: 81%;
+    }
+    .f2-col1 {
+        width: 66px;
+    }
+    .f3-col4 h6.f3-first {
+        padding-right: 0px;
+        width: 104.6%;
+    }
+    .f3-col1, .f4-col1 {
+        width: 50px;
+    }
+    .f3-col4 {
+        width: 80%;
+    }
+    .f3-head1 {
+        width: 86%;
+        margin-right: 5px;
+    }
+    .f3-head2, .f3-head3 {
+        width: 42.6%;
+        margin: 2px 5px 20px 2px;
+    }
+    .f4-head1, .f4-head2 {
+        margin-right: 10px;
+        width: 85.4%;
+    }
+    .f4-col4 {
+        width: 80%;
+    }
+    .f5-content-block {
+        overflow: auto;
+        position: relative;
+    }
+    .f5-col1, .f5-col2 {
+        width: 45%;
+        margin-right: 10px;
+    }
+    .f5-head1 {
+        width: 45%;
+        margin-right: 5px;
+    }
+    .f5-head2 {
+        width: 29%;
+    }
+    .f5-head3 {
+        width: 24%;
+        margin-right: 0px;
+    }
+    .f5-gradient-arrow-line3 {
+        width: 31%;
+    }
+    .f7-content img {
+        width: 890px;
+    }
+    /*end   style Why Wikigrads page*/
+}
+
+@media (min-width: 900px) and (max-width: 1000px) {
+    /*header*/
+    .wiki_header_line {
+        height: 50px;
+    }
+    .landing_page_logo {
+        padding: 27px 0 0 15px;
+    }
+    .landing_header_line {
+        height: 100px;
+    }
+    #wiki-header {
+        height: 50px;
+        max-width: 900px;
+        min-width: 768px;
+        padding: 0;
+    }
+    #wiki-block-main {
+        max-width: 900px;
+        min-width: 768px;
+    }
+    .wiki-menu-no-auth-ul .about {
+        margin-left: 30px;
+    }
+    .wiki-menu-no-auth-ul .about a {
+        width: 50px;
+    }
+    .wiki-input-forgot {
+        padding: 2px 0px 7px 22px;;
+    }
+    .wiki-input-forgot a {
+        font-size: 12px;
+    }
+    #wiki-header .wiki-menu {
+        padding-top: 10px;
+    }
+    #wiki-header .wiki-form-login {
+        padding-top: 5px;
+    }
+    .wiki-menu-login {
+        width: 90%;
+    }
+    #wiki-header .wiki-logo {
+        padding: 0 0 0 15px;
+    }
+    /*footer*/
+    #wiki-footer-block {
+        width: 100%;
+        /*max-width: 900px;*/
+    }
+    #wiki-footer-menu {
+        width: 70%;
+        padding-left: 15px;
+    }
+    #wiki-footer-menu ul li a {
+        font-size: 16px;
+    }
+    #wiki-copy {
+        width: 26%;
+    }
+    /*pages 'about' and 'privacy and terms'*/
+    .content-pad {
+        width: 65%;
+        margin-left: 270px;
+    }
+    .wiki-about-menu {
+        width: 215px;
+        margin-left: 10px;
+    }
+    .whyWiki-download {
+        width: 220px;
+        margin-left: 10px;
+    }
+    .wiki-about-menu ul li:hover, .wiki-about-menu ul li.active {
+        background: url("/images/new_design/about_menu_arrow.png") no-repeat scroll 200px 2px rgba(0, 0, 0, 0);
+    }
+    .wiki-menu-no-auth-ul .how-it-works a {
+        width: 100px;
+    }
+    
+    /*content*/
+    .wiki-form-block-upload {
+        width: 700px;
+    }
+    #wiki-win {
+        width: 80%;
+    }
+    .wg-required {
+        margin-left: 7px;
+    }
+    .add-to-conv-holder > div.text-area {
+        width: 75%;
+    }
+    .add-to-conv-holder textarea {
+        padding: 5px 0 0 5px;
+        height: 25px;
+    }
+    #my-profile .userinfo-block {
+        margin-left: 25px;
+    }
+    #my-profile .user-actions {
+        margin-left: 70px;
+        width: 60%;
+    }
+    #my-profile .user-info, .user-graduate-editor {
+        width: 100%;
+    }
+    .my-students-block {
+        margin-left: 40px;
+    }
+    #wiki-private-feed-main table {
+        width: 100%;
+    }
+    .my-students-table {
+        width: 860px;
+    }
+    .my-students-table tr th {
+        font-size: 14px;
+    }
+    .my-students-table tr td a {
+        font-size: 14px;
+    }
+    .my-courses-left {
+        margin-top: 2px;
+    }
+    .wiki-caption-1 {
+        font-size: 32px;
+        background-position: right 8px;
+    }
+    .wg-static-input-width-5 {
+        width: 285px !important;
+    }
+    .wg-static-input-width {
+        width: 600px !important;
+    }
+    #privacy .class-select {
+        width: 180px;
+    }
+    #privacy button {
+        margin-left: 10px;
+        padding: 7px 20px;
+    }
+    #wiki-main-menu-course li ul.course-feed,
+    #wiki-main-menu-course li ul.private-feed,
+    #wiki-main-menu-course li ul.statistics {
+        top: 40px;
+    }
+    
+    .add-to-conv-holder > div.text-area > div.ahrefdiv {
+        width: 7%;
+    }
+    .add-to-conv-holder > div.text-area > div.txtdiv {
+        width: 78%;
+    }
+    .ahrefdiv > a#wiki-comment-fx {
+        margin: 3px 9px;
+    }
+    
+    /*bootstrap tour*/
+    #step2-1 {
+        right: 65px;
+        top: -40px;
+    }
+    #step3-1 {
+        right: 120px;
+    }
+    #step8-1 {
+        left: 377px;
+    }
+    #step9-2 {
+        left: 280px;
+    }
+    #step12-1 {
+        right: 110px;
+    }
+    #step13-1 {
+        left: 540px;
+    }
+    #step14-1, #step14-2 {
+        left: 540px;
+    }
+    
+    /*start style Why Wikigrads page*/
+    
+    .popUpClose {
+        right: -666px;
+    }
+    
+    #figure1 #figure1-content,
+    #figure2 #figure2-content,
+    #figure3 #figure3-content,
+    #figure4 #figure4-content,
+    #figure5 #figure5-content,
+    #figure6 #figure6-content,
+    #figure7 #figure7-content {
+        margin: 10px auto 0px auto;
+        width: 660px;
+        height: 568px;
+        padding: 10px 30px;
+
+    }
+    .f1-col3 {
+        width: 60%;
+    }
+    .f1-line1 {
+        height: 95px;
+    }
+    .f1-line2 {
+        height: 240px;
+    }
+    .f1-line3, .f1-line4 {
+        height: 180px;
+    }
+    .f1-line5 {
+        height: 225px;
+    }
+    .f1-line6 {
+        height: 200px;
+    }
+    .f1-line8 {
+        height: 163px;
+    }
+    .f1-content-block, .f2-content-block, .f3-content-block,
+    .f4-content-block, .f5-content-block {
+        height: 525px;
+    }
+    .f2-col4 {
+        width: 73%;
+    }
+    .f2-col4 h6 {
+        width: 70%;
+    }
+    .f2-col1 {
+        width: 66px;
+    }
+    .f2-line1 {
+        height: 187px;
+    }
+    .f2-line2 {
+        height: 226px;
+    }
+    .f2-line3 {
+        height: 306px;
+    }
+    .f2-line4 {
+        height: 207px;
+    }
+    .f3-col4 h6.f3-first {
+        padding-right: 0px;
+        width: 97%;
+    }
+    .f3-col1, .f4-col1 {
+        width: 50px;
+    }
+    .f3-col4 {
+        width: 80%;
+    }
+    .f3-head1 {
+        width: 80.6%;
+        margin-right: 5px;
+    }
+    .f3-head2, .f3-head3 {
+        width: 39.7%;
+        margin: 2px 5px 20px 2px;
+    }
+    .f3-line1 {
+        height: 302px;
+    }
+    .f3-line2 {
+        height: 210px;
+    }
+    .f4-head1, .f4-head2 {
+        margin-right: 10px;
+        width: 79.6%;
+    }
+    .f4-col4 {
+        width: 80%;
+    }
+    .f5-content-block {
+        overflow: auto;
+        position: relative;
+    }
+    .f5-col1, .f5-col2 {
+        width: 45%;
+        margin-right: 10px;
+    }
+    .f5-head1 {
+        width: 45%;
+        margin-right: 5px;
+    }
+    .f5-head2 {
+        width: 29%;
+    }
+    .f5-head3 {
+        width: 24%;
+        margin-right: 0px;
+    }
+    .f5-gradient-arrow-line3 {
+        width: 31%;
+    }
+    .f7-content img {
+        margin-top: 10%;
+        width: 640px;
+    }
+        /*end   style Why Wikigrads page*/
+}
+
+@media (min-width: 0px) and (max-width: 870px) {
+    #wiki-header .wiki-menu-login UL LI {
+        display: block !important;        
+    }
+    .wiki-form-login {
+        vertical-align: top !important;
+    }
+    .wiki-menu-login {
+        width: 16% !important;
+    }
+    
+    .wiki-logo-login {
+        width: 68% !important;
+        vertical-align: top !important;
+    }
+    #wiki-header .wiki-logo {
+        padding: 7px 0 0 15px;
+    }
+    .wg-form-comment-status {
+        padding: 5px 0 0 45px;
+        text-align: left;
+    }
+}
+
+@media (min-width: 760px) and (max-width: 899px) {
+    /*header*/
+    #wiki-block-main,
+    #wiki-header {
+        max-width: 899px;
+        min-width: 755px;
+    }
+    #wiki-main-menu li ul {
+        left: -85px;
+    }
+    .wiki-input-login input, .wiki-input-password input {
+        margin-left: 10px;
+        width: 150px;
+    }
+    .landing_page_logo {
+        padding: 21px 0px 0px 15px;
+    }
+    #wiki-header .wiki-form {
+        width: 40%;
+    }
+    .wiki-input-keep {
+        padding: 2px 0px 0px 10px;
+    }
+    .wiki-input-forgot {
+        padding: 3px 0px 2px 12px;
+    }
+    .wiki-input-forgot a {
+        font-size: 11px;
+    }
+    #wiki-header .wiki-menu .about {
+        margin-left: 25px;
+    }
+    .wiki-main-page-social {
+        margin-bottom: 10%;
+        padding-top: 0;
+    }
+    #wiki-header .wiki-menu .my-students {
+        width: 110px;
+    }
+    #wiki-header .wiki-menu .documents {
+        width: 120px;
+    }
+    #wiki-header .wiki-menu .profile {
+        width: 80px;
+    }
+    #wiki-content-main-inner h1 {
+        margin-top: 70px;
+    }
+    #wiki-content-main h4 {
+        font-size: 16px;
+    }
+    #wiki-main-page-table {
+        padding: 0 30px;
+    }
+/*    #wiki-content-main .wiki-button-instructor,
+    #wiki-content-main .wiki-button-student {
+        width: 350px;
+        font-size: 16px;
+        height: 39px;
+    }*/
+    #wiki-content-main .wiki-button-readmore h4 {
+        margin-right: 70px;
+    }
+    .wiki-about-menu {
+        width: 215px;
+        margin-left: 10px;
+    }
+    .whyWiki-download {
+        margin-left: 10px;
+        width: 220px;
+    }
+    .wiki-about-menu ul li:hover, 
+    .wiki-about-menu ul li.active {
+        background-position: 200px 2px;
+    }
+    .content-pad {
+        width: 65%;
+        margin-left: 250px;
+        max-width: 700px;
+        min-width: 400px;
+    }
+    .content-pad h1 {
+        width: 500px;
+    }
+    .about-list li:nth-child(1),
+    .about-list li:nth-child(2) {
+        margin-bottom: 50px;
+    }
+    .about-list {
+        margin-left: 0px;
+    }
+    .content-pad table tr th {
+        font-size: 17px;
+    }
+    #Privacy-police,
+    #introduction {
+        margin-top: 0px;
+    }
+    
+    .wiki-menu-login {
+        min-width: 490px;
+    }
+    .wiki-form-block-upload {
+        width: 570px;
+    }
+    #wiki-win {
+        width: 80%;
+    }
+    .add-to-conv-holder > div.text-area {
+        width: 72%;
+    }
+    .add-to-conv-holder textarea {
+        padding: 5px 0 0 5px;
+        height: 25px;
+    }
+    .add-to-conv-holder > div.text-area > div.txtdiv {
+        width: 74%;
+    }
+    .add-to-conv-holder > div.text-area > div.ahrefdiv {
+        width: 8%;
+    }
+    #my-profile .user-actions {
+        margin-left: 83px;
+        width: 53%;
+    }
+    #my-profile .user-info, .user-graduate-editor {
+        width: 100%;
+    }
+    .one-course-id {
+        max-width: 150px;
+        min-width: 150px;
+    }
+    .one-course-title {
+        width: 50%;
+    }
+    .remove-icon {
+        margin-top: 1px;
+    }
+    
+    #wiki-footer-menu {
+        width: 64%;
+        padding: 25px 0 20px 15px;
+    }
+    #wiki-copy {
+        width: 32%;
+    }
+    #wiki-footer-menu ul li a {
+        font-size: 13px;
+    }
+    #wiki-footer-menu ul li {
+        margin-right: 8px;
+    }
+    .my-courses-left {
+        display: none;
+    }
+    .my-students-block {
+        margin-left: 30px;
+    }
+    .my-students-table tr th,
+    .my-students-table tr td a {
+        font-size: 13px;
+    }
+    .short-course-name {
+        font-size: 20px !important;
+    }
+    .wiki-caption-1 {
+        font-size: 32px;
+        background: none;
+        margin-bottom: 50px; 
+    }
+    
+    .wiki-caption-1 {
+        padding-right: 0;
+        width: 670px !important;
+    }
+    .wiki-column-space {
+        padding: 2px !important;
+    }
+    .wiki-form-reg {
+        width: 670px !important;
+    }
+    #wiki-form-registration {
+        margin: 50px auto;
+        width: 670px;
+    }
+    .wiki-column-space {
+        display: none !important;
+    }
+    .wg-static-input-width-5 {
+        margin-right: 29px;
+        width: 300px !important;
+    }
+    #sfApplyApply_is_tutor {
+        margin-left: 19px;
+    }
+    #sfApplyApply_major {
+        margin-left: 20px;
+        margin-right: 0;
+    }
+    #privacy .code-radio {
+        display: block !important;
+        padding-left: 0;
+        padding-top: 2px;
+    }
+    #privacy .class-select {
+        width: 180px;
+    }
+    #privacy button {
+        margin-left: 10px;
+        padding: 7px 20px;
+    }
+    #wg-code-edit {
+        width: 150px;
+    }
+    #wiki-content-main .wiki-button-instructor {
+        margin: 0px 0px 10px 0px;
+    }
+    .my-students-table {
+        width: 100px;
+    }
+    .my-students-table tr th {
+        padding: 5px 25px 5px 5px; 
+    }
+    #wiki-private-feed-main table {
+        width: 100%;
+    }
+    #wiki-math-editor {
+        width: 90%;
+    }
+    
+    /*bootsrap tour*/
+    .tour {
+        font-size: 17px;
+    }
+    .popover {
+        min-width: 150px;
+    }
+    #step2-1 {
+        right: 25px;
+        top: -40px;
+    }
+    #step3-1 {
+        right: 50px;
+        top: 255px;
+    }
+    #step-2 .arrow {
+        top: 31.5%;
+    }
+    #step-3 .arrow {
+        top: 31.5%;
+    }
+    .tour-arrow-bottom-one {
+        margin-left: 42%;
+    }
+    #step-6 .arrow {
+        left: 11.5%;
+    }
+    #step9-2 {
+        left: 155px;
+        top: 90px;
+    }
+    #step-9 .arrow {
+        top: 41px;
+    }
+    #step8-1 {
+        left: 307px;
+    }
+    #step12-1 {
+        right: 10%;
+        top: 19px;
+    }
+    #step-13 .arrow {
+        top: 24%;
+    }
+    #step13-1 {
+        left: 400px;
+    }
+    #step14-1, #step14-2 {
+        left: 60%;
+    }
+    #wiki-form-registration .custom-select select, 
+    #wiki-form-registration .wiki-form-row .custom-select select {
+        font-size: 20px;
+        height: 45px;
+        padding: 10px;
+        width: 104% !important;
+    }
+    
+    /*start style Why Wikigrads page*/
+    
+    .popUpClose {
+        right: -666px;
+    }
+    
+    #figure1 #figure1-content,
+    #figure2 #figure2-content,
+    #figure3 #figure3-content,
+    #figure4 #figure4-content,
+    #figure5 #figure5-content,
+    #figure6 #figure6-content,
+    #figure7 #figure7-content {
+        margin: 10px auto 0px auto;
+        width: 660px;
+        height: 568px;
+        padding: 10px 30px;
+
+    }
+    .f1-col3 {
+        width: 60%;
+    }
+    .f1-line1 {
+        height: 95px;
+    }
+    .f1-line2 {
+        height: 240px;
+    }
+    .f1-line3, .f1-line4, .f1-line8 {
+        height: 180px;
+    }
+    .f1-line5 {
+        height: 225px;
+    }
+    .f1-line6 {
+        height: 200px;
+    }
+    .f1-line7 {
+        height: 145px;
+    }
+    
+    .f1-content-block, .f2-content-block, .f3-content-block,
+    .f4-content-block, .f5-content-block {
+        height: 525px;
+    }
+    .f2-col4 {
+        width: 73%;
+    }
+    .f2-col1 {
+        width: 66px;
+    }
+    .f2-col4 h6 {
+        width: 70%;
+    }
+    .f2-line1 {
+        height: 187px;
+    }
+    .f2-line2 {
+        height: 226px;
+    }
+    .f2-line3 {
+        height: 306px;
+    }
+    .f2-line4 {
+        height: 207px;
+    }
+    .f3-col4 h6.f3-first {
+        padding-right: 0px;
+        width: 97%;
+    }
+    .f3-col1, .f4-col1 {
+        width: 50px;
+    }
+    .f3-col4 {
+        width: 80%;
+    }
+    .f3-head1 {
+        width: 80.6%;
+        margin-right: 5px;
+    }
+    .f3-head2, .f3-head3 {
+        width: 39.7%;
+        margin: 2px 5px 20px 2px;
+    }
+    .f3-line1 {
+        height: 301px;
+    }
+    .f3-line2 {
+        height: 211px;
+    }
+    .f4-head1, .f4-head2 {
+        margin-right: 10px;
+        width: 79.6%;
+    }
+    .f4-col4 {
+        width: 80%;
+    }
+    .f5-content-block {
+        overflow: auto;
+        position: relative;
+    }
+    .f5-col1, .f5-col2 {
+        width: 45%;
+        margin-right: 10px;
+    }
+    .f5-head1 {
+        width: 45%;
+        margin-right: 5px;
+    }
+    .f5-head2 {
+        width: 29%;
+    }
+    .f5-head3 {
+        width: 24%;
+        margin-right: 0px;
+    }
+    .f5-gradient-arrow-line3 {
+        width: 31%;
+    }
+    .f7-content img {
+        margin-top: 10%;
+        width: 640px;
+    }
+    /*end   style Why Wikigrads page*/
+}
+
+@media (min-width: 0px) and (max-width: 899px) {
+    .wiki-caption-1 {
+        display: block !important;
+        width: auto !important;
+        text-align: center !important;
+    }
+    
+    .wiki-form-reg {
+        display: block !important;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 740px) {
+    #wiki-footer-menu a {
+        font-size: 16px !important;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 690px) {
+    #wiki-header .wiki-logo img {
+        width: 265px !important;
+    }
+    .wiki-form-col {
+        display: block !important;
+        width: 100%;
+    }
+    
+    .wiki-hide-1 {
+        display: none !important;
+    }
+
+    #wiki-header .wiki-menu UL LI a {
+        width: 86px !important;
+    }   
+    
+    #loginbutton {
+        width: auto !important;
+        height: 45px;
+    }
+    
+    .wiki-center {
+        text-align: center !important;
+    }
+    
+    .wiki-form-col .wiki-arrow-right {
+        width: 100% !important;
+    }
+    
+    div.wiki-hide-1 {
+        display: none !important;
+    }
+    
+    div#wiki-clear-row {
+        display: none !important;
+    }
+    
+    .wiki-main-page-col {
+        display: block !important;
+        width: 100% !important;
+        margin-bottom: 20px !important;
+    }
+    
+    .wiki-ivite-table {
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 660px) {
+    #wiki-footer-menu a {
+        font-size: 14px !important;
+    }
+    .wiki-logo-login, 
+    .wiki-menu-login,
+    .wiki-form-login {
+        display: block !important;
+        width: 100% !important;
+    }
+    
+    #wiki-header .wiki-menu UL LI a {
+        width: auto !important;
+    }
+    
+    .wiki-logo-auth-text {
+        width: auto !important;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 590px) {
+    #wiki-footer-block {
+        display: table !important;
+    }
+    
+    #wiki-footer-menu {
+        display: table-cell !important;
+        width: 30% !important;
+    }
+    
+    #wiki-copy {
+        display: table-cell !important;
+        width: 70% !important;
+    }
+    
+    #wiki-footer-menu ul li {
+        display: block !important;
+        width: 100% !important;
+        padding-left: 20px !important;
+    }
+    
+}
+
+@media (min-width: 0px) and (max-width: 520px) {
+    #wiki-header div {
+        display: block !important;
+    }
+    
+    .wiki-logo-auth {
+        display: table !important;
+    }
+    
+    #wiki-auth-pre .wiki-logo-auth-text,
+    #wiki-auth-pre .wiki-logo-auth-img {
+        display: table-cell !important;
+    }
+    
+    #wiki-header .wiki-logo {
+        width: 100% !important;
+    }
+    #wiki-header .wiki-logo img {
+        width: 100% !important;
+    }
+    
+    #wiki-header .wiki-menu UL LI a {
+        width: auto !important;
+    }
+    
+    #wiki-header .wiki-menu {
+        width: 100% !important;
+    }
+    
+    #wiki-header .wiki-form {
+        width: 100% !important;        
+    }
+    
+    div.wiki-hide-1 {
+        display: none !important;
+    }
+    
+    .wiki-form-col {
+        width: auto !important;
+    }
+    
+    form div#wiki-login {
+        display: table-cell !important;
+        width: 100% !important;
+    }
+    
+    div#wiki-clear-row {
+        display: none !important;
+    }
+
+    #wiki-content-main .wiki-button-instructor {    
+        width: 90% !important;
+    }
+    
+    .wiki-readmore-col-2 {
+        width: 200px !important;
+    }
+    
+    .wiki-readmore-col-2 a {
+        font-size: 30px !important;
+    }
+    
+    #wiki-header .wiki-menu UL {
+        padding-right: 10px !important;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 400px) {
+    #wiki-content-main .wiki-button-readmore div {
+        display: block !important;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 350px) {
+    #wiki-content-main .wiki-button-instructor,
+    #wiki-content-main .wiki-button-student {    
+        font-size: 100% !important;
+    }
+    
+    #wiki-content-main .wiki-button-student {
+        width: 70% !important;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 300px) {
+    #wiki-content-main .wiki-button-instructor a,
+    #wiki-content-main .wiki-button-student a{
+        padding: 2% !important;
+    }
+    
+    #wiki-footer-menu,
+    #wiki-copy {
+        display: block !important;
+        width: 100% !important;
+    }
+    
+    #wiki-copy {
+        text-align: right !important;
+    }
+}

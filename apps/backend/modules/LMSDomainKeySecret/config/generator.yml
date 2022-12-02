@@ -1,0 +1,47 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           LMSDomainKeySecret
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          LMSDomainKeySecret
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields: 
+        display:
+          - domain
+          - key_s
+          - secret
+      list:
+        display:
+          - domain
+          - key_s
+          - secret
+          - updated_at
+      filter: 
+        display:
+          - domain
+          - key_s
+          - secret
+      form: 
+        display:
+#          - name
+          - domain
+          - key_s
+          - secret
+      edit:
+        display:
+          - key_s
+          - secret
+      new:
+        display:
+#          - name
+          - domain
+          - key_s
+          - secret

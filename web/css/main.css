@@ -1,0 +1,1188 @@
+/*////////////////////////////////////////////////////////
+//                                                     //
+// FLASH MESSAGES (notices, errors, etc.)             //
+//                                                   //
+////////////////////////////////////////////////////*/
+#content-container .flash-container {
+    background-color:#d6d6d6;
+    padding:20px;
+    margin:0;
+}
+    #content-container .flash-container div {
+      padding: 5px;
+      font-family: verdana;
+      font-size:11px;
+      font-weight:bold;
+      background-color:#fff;
+      border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px;
+    }
+    #content-container .flash-notice {
+      border:2px solid #343434;
+      color: #343434;
+    }
+    #content-container .flash-error {
+      border:2px solid darkred;
+      color: red;
+    }
+
+    .login-error {
+        color:#9f0000;
+        color:#ff0;
+        font-size:11px;
+        border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px;
+        margin-top:20px;
+        font-style:italic;
+        font-weight:bold;
+    }
+    #login #loginremember .error-forgot a:link, 
+    #login #loginremember .error-forgot a:visited {
+        color:#ff0;
+        font-size:11px;
+        float:right;
+    }
+
+/*/////////////////////new///////////////////////////////////
+//                                                     //
+// CONTENT                                            //
+//                                                   //
+////////////////////////////////////////////////////*/
+#content-container {
+  /* defined in layout.css */
+}
+  #content-title {
+    background: url('../images/bg-content-title.png');
+    background-repeat: repeat-x;
+    z-index:10;
+  }
+  #content-title-pointer {
+    position:absolute;
+    top:86px;
+    left:40px;
+    background-color:transparent;
+    z-index:10;
+  }
+
+  .content-pad { /* much content has a common padding, but others don't and negative margins had to be set. instead define this generic content-pad for when padding is desired */
+    /*padding:40px;*/
+    padding:30px;
+    margin-bottom:30px; /* this ensures any content will not be hidden behind the fixed footer */
+  }
+
+  #content-container h1,
+  #content-container h2,
+  #content-container h3,
+  #content-container h4,
+  #content-container h5,
+  #content-container h6,
+  #content-container li,
+  #content-container dd,
+  #content-container div,
+  #content-container hr,
+  #content-container p {
+    color: #666666;
+  }
+
+.content-inputarea { /* was #inputarea. is a class in case more than one input area to appear on page */
+    padding: 22px 36px;
+    background-color: #d6d6d6;
+}
+
+.form-menu li {
+   display: inline;
+   margin-right: 10px;
+   font-size: 14px;
+}
+
+.form-menu .form-link {
+    padding-left: 16px;
+}
+/*
+icon_photo_add.png
+icon_document_add.png
+*/
+.form-menu .photo-add {
+    background: url(../images/icon_photo_add.png) no-repeat;
+    background-position: left center;
+    background-size: 14px 14px;    
+}
+
+.form-menu .document-add {
+    background: url(../images/icon_document_add.png) no-repeat;
+    background-position: left center;
+    background-size: 14px 14px;    
+}
+
+.form-menu a {
+    cursor: pointer;
+    color: #004078;
+}
+
+.form-menu a:hover {
+    color: #ff0000;
+}
+
+    .content-inputarea h3 {
+      font-style: italic;
+      font-size: 18px;
+    }
+
+
+/*////////////////////////////////////////////////////////
+//                                                     //
+// COMMON                                             //
+//                                                   //
+////////////////////////////////////////////////////*/
+input:focus, textarea:focus, select:focus { outline:none; } /* removes 'glow' from around inputs when they have focus */
+.l-align { text-align:left   }
+.c-align { text-align:center }
+.r-align { text-align:right  }
+.bkclr-white {background-color: #fff }
+.font-normal {font-style:normal}
+
+.col-float,
+.l-float {float:left}
+.r-float {float:right}
+.clear-float:before,
+.clear-float:after { content: "."; display: block; height: 0; overflow: hidden; }
+.clear-float:after {clear: both;}
+.clear-float {zoom: 1;} /* IE < 8 */
+.clear-force {clear:both} /* sometimes .clear-float will fail, e.g two stacked .clear-float divs with margin applied to bottom div */
+.btn-toggle-arrow {
+    width:31px;
+    height:19px;
+    display:block;
+    background-image: url(../images/btn-toggle-arrow.png);
+    background-position: 0 -19px;
+    cursor:pointer;
+}
+    .btn-toggle-arrow:hover {background-position: 0 0}
+
+.form li { margin-top: 10px }
+    .form li label { display:block }
+
+.display-none {display:none}
+a { text-decoration:none; color: #59c032; }
+
+h1 {
+    font-size: 14pt;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+h3 {
+    font-size: 14pt;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+.chatty {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-size: 1.2em;
+}
+.important {
+    font-style: italic;
+    font-size: smaller;
+    margin-bottom: 2em;
+}
+#finished HR {
+    width: 80%;
+}
+
+/*/////////////////////////////////////////////  
+/ PAGER                                      /
+///////////////////////////////////////////*/
+.autopager-container { height: 30px; margin:40px 0 20px 0; text-align:center; }
+
+.pager-container {font-size:0.8em; margin-top:5px; border:#000 1px solid; padding:5px; color:#fff; background-color:#343434}
+    .pager-results {margin-bottom:4px;}
+    ul.pager {}
+    ul.pager li {display:inline; margin:2px;zoom:1;}
+    .pager-container a:link,
+    .pager-container a:visited {color:#fff}
+    .pager-container a:hover {color:#a5fa84}
+
+/*/////////////////////////////////////////////  
+/ btn-toggle-arrow-spr                       /
+///////////////////////////////////////////*/
+.togarw-up-drk,
+.togarw-dn-drk,
+.togarw-up-lgt,
+.togarw-dn-lgt {
+    width:32px;
+    height:20px;
+    display:block;
+    background-image: url(../images/btn-toggle-arrow-spr.png);
+    cursor:pointer;
+}   
+    .togarw-up-drk { background-position: 0 0}
+    .togarw-dn-drk { background-position: 0 -20px}
+    .togarw-up-lgt { background-position: 0 -40px}
+    .togarw-dn-lgt { background-position: 0 -60px}
+    .togarw-up-drk:hover { background-position: -32px 0}
+    .togarw-dn-drk:hover { background-position: -32px -20px}
+    .togarw-up-lgt:hover { background-position: -32px -40px}
+    .togarw-dn-lgt:hover { background-position: -32px -60px}
+
+/*/////////////////////////////////////////////  
+/ btn-remove-spr                             /
+///////////////////////////////////////////*/
+.btn-remove {
+    width:11px;
+    height:11px;
+    display:block;
+    background-image: url(../images/btn-remove-spr.png);
+    background-position: 0 0;
+    cursor:pointer;
+}
+    .btn-remove:hover {
+        background-position: 0 -11px;
+    }
+
+/*/////////////////////////////////////////////  
+/ btn-download                               /
+///////////////////////////////////////////*/    
+a.btn-download:link {
+    width:92px;
+    height:40px;
+    display:block;
+    background-image: url(../images/btn-download.png);
+    cursor: pointer;
+}
+
+/*/////////////////////////////////////////////  
+/ friend status icons                        /
+///////////////////////////////////////////*/   
+.fsicon-non-friend {
+    display:inline-block;
+    background: url(../images/wmstatus-unkn.png);
+    width:14px;
+    height:14px;
+}
+
+
+/*////////////////////////////////////////////////////////
+//                                                     //
+// HOME                                               //
+//                                                   //
+////////////////////////////////////////////////////*/ 
+
+.home-section{
+    width: 100%;
+    float: left;
+    padding: 20px 0;
+}
+
+.home-section.border-bottom{
+    border-bottom: 1px solid #DCDCDC; 
+}
+
+.home-section p, .home-section img{
+    float: left;
+}
+
+.home-section p{
+    font-size: 22px;
+    line-height: 30px;
+    font-style: italic;
+    margin-top: 25px;
+    margin-left: 20px;
+    font-weight: 100;
+}
+
+
+/*////////////////////////////////////////////////////////
+//                                                     //
+// APPLY                                              //
+//                                                   //
+////////////////////////////////////////////////////*/ 
+
+#applyform .apply-field{
+    float: left;
+    margin-bottom: 20px;
+}
+
+#applyform .styled-select{
+    margin-bottom: 20px;
+    float: left;
+}
+
+#applyform .grey-input{
+    margin-bottom: 0px;
+   /* float: left;*/
+}
+
+#applyform ul.error_list{
+ /*   margin-top: 45px;*/
+    float: left;
+    width: 260px;
+}
+
+#applymajor{
+   /* float: left;*/
+   margin-bottom: 0 !important;
+}
+
+
+#applyclassyear{
+    /*margin-left: 20px;*/
+}
+
+#applyform select{
+    width: 260px;
+}
+
+#applyimage{
+    margin-bottom: 0 !important;
+}
+
+#applyimage label{
+    margin-right: 5px;
+    float: left;
+}
+
+#applysubmit{
+    float: right !important;
+}
+
+#apply-graduation-info{
+    clear:both;
+}
+
+
+
+
+/*////////////////////////////////////////////////////////
+//                                                     //
+// Forgot password                                    //
+//                                                   //
+////////////////////////////////////////////////////*/ 
+
+#forgotform .grey-input{
+    margin-bottom: 0px;
+}
+
+.submit-btn{
+    float: left; 
+    clear: both;  
+    margin-top: 20px;
+}
+
+
+/*////////////////////////////////////////////////////////
+//                                                     //
+// sfGuard stuff                                      //
+//                                                   //
+////////////////////////////////////////////////////*/ 
+
+#forgotform LI {
+    list-type-style: square;
+    margin-left: 4em;
+}
+#forgotform LABEL {
+    margin-right: 2em;
+}
+
+#continue-btn{
+    margin-top: 20px;
+}
+
+
+
+/*////////////////////////////////////////////////////////
+//                                                     //
+// PAGE SPECIFIC (potentially move to own css files)  //
+//                                                   //
+////////////////////////////////////////////////////*/   
+
+ul.error_list {
+    position: relative;
+    list-style-type: none;
+    font-style: italic;
+    color: #ff0000;
+    text-align: left;
+    clear: both;
+    padding-top: 10px;
+   /* float: left;*/
+  }
+
+ul.error_list li {
+    color: #ff0000 !important;
+}
+
+
+  #keepintouch {
+    width: 100%;
+    text-align: center;
+  }
+  #keepintouch h3 {
+    font-size: 18pt;
+  }
+  #keepintouch p {
+    margin-top: 32px;
+  }
+
+  #sf_guard_signin input {
+  }
+
+  #sf_guard_signin #username {
+
+  }
+  #sf_guard_signin #remember {
+    font-family: georgia,serif;
+  }
+
+  .friend-action, .course-action, .document-action{
+    text-decoration: none;
+    font-style:italic;
+    cursor: pointer;
+    color: #84d765;
+  }
+
+  a.friend-action:hover, a.course-action:hover, a.document-action:hover{
+    color:#59c032;
+  }
+
+
+/* a generic left floater */
+    .leftbox {
+        float: left;
+    }
+
+
+/**/
+/*	terms and conditions text	*/
+/**/
+    #terms {
+        font-family: Georgia, serif;
+        font-size: 9pt;
+    }
+    #terms H3 {
+        font-size: 11pt;
+        font-weight: bold;
+        line-height: 2em;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #terms P {
+        line-height: 1.5em;
+    }
+    #terms .leftbox, #contactpage .leftbox {
+        margin-top: 2em;
+        margin-left: 2em;
+        color: #666;
+    }
+    #terms H6 {
+        clear: left;
+        padding-top: 4em;
+        padding-bottom: 2em;
+        text-align: right;
+        font-size: 10pt;
+        font-family: Georgia, serif;
+        font-style: italic;
+    }
+    #terms DT, #contactpage DT {
+        width: 100%;
+        background-color: #ffffff;
+        text-align: center;
+        padding: 4px;
+        font-weight: bold;
+        border: 1px solid #acacac;
+    }
+    #terms DD, #contactpage DD {
+        padding: 4px 8px 4px 8px;
+    }
+
+
+/**/
+/*	FAQ	*/
+/**/
+
+    #faq H1 {
+        font-size: 14pt;
+        font-weight: bold;
+    }
+    #faq .faqpair {
+        width: 100%;
+        border: 2px solid #acacac;
+        background-color: white;
+        margin-top: 1em;
+    }
+    .faqpair .faquestion {
+        background-color: #f1f1f1;
+        padding: 4px;
+    }
+    .faqpair .faanswer {
+        padding: 4px;
+        margin-top: .5em;
+        margin-bottom: .5em;
+    }
+
+
+
+/* sidebar is primarily on the about page, but generic enbough to use elsewhere */
+.sidebarright {
+    float: right;
+    width: 240px;
+    border: 1px solid #acacac;
+    background-color: #ffffff;
+    padding: 8px;
+    margin-left: 16px;
+    -moz-border-radius-bottomright: 50px 25px;
+    -moz-border-radius-topleft: 	50px 25px;
+    border-bottom-right-radius: 	50px 25px;
+    border-top-left-radius:			50px 25px;
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow:         3px 3px 5px 6px #ccc;
+}
+.sidebarright H3 {
+    width: 100%;
+    text-align: center;
+    font-size: 16pt;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+.sidebarright H4 {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.sidebarright H5 {
+    font-size: 13px;
+    text-align: right;
+    font-style: italic;
+}
+.sidebarright H6 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+.sidebarright P {
+    font-size: 12px;
+    line-height: 1.2em;
+}
+.sidebarright UL {
+    margin-top: 1.5em;
+    margin-left: 1em; padding-left: 1em;
+    list-style-type: square;
+}
+.sidebarright LI {
+    font-size: 12px;
+    line-height: 1.2em;
+    margin-bottom: 1.2em;
+}
+.sidebarright .whitepaperdl {
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: bold;
+    padding: 1em 0 1em 0;
+    font-family: Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+}
+.sidebarright .whitepapericn {
+    float: left;
+    line-height: 13px;
+    padding-right: 8px;
+}
+
+
+/**/
+/* about */
+/**/
+
+#about P {
+    font-size: 14px;
+    line-height: 1.2em;
+    margin-bottom: 1em;
+}
+#about UL {
+    margin-top: 1.5em;
+    margin-left: 1em; padding-left: 1em;
+    list-style-type: square;
+}
+#about LI {
+    font-size: 14px;
+    line-height: 1.2em;
+    margin-bottom: 1.2em;
+}
+#about UL.schools {
+    list-style-type: none;
+}
+#about UL.schools LI {
+    font-weight: bold;
+    font-family: Arial,Helvetica,sans-serif;
+}
+#about H3 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+#about .mission {
+    font-size: larger;
+    border: 2px solid #a5a5a5;
+    background-color: white;
+    padding: 12px;
+    color: #656565;
+    text-align: center;
+}
+
+
+/*/////////////////////////////////////////////  
+/ COURSES                                    /
+///////////////////////////////////////////*/
+#course-list {}
+    #course-list li { margin-top: 20px }
+
+#edit-courses { /* master container for the edit-courses pages */
+
+}
+    #edit-courses h1 { font-style: italic; color: #333; font-size:1.2em;   }
+    #course-list .entry-head { background-color: #fff; padding:5px; }
+        #course-list .course-name {  float:left; width:80%; color:#333; }
+        #course-list .remove-course {float:right; width:20%; text-align:right; font-size:0.8em; }
+
+    .course-list-line {margin-top:5px; padding-left:5px; font-size:0.8em; }
+        .course-list-line .label { color:#aaa; font-style:italic; }
+        .course-list-line .value {color:#333; }
+
+#form-course-add {}
+    #form-course-add h2 {margin-bottom:10px;}
+    #form-course-add .select-container {float:left; margin-bottom:10px; margin-left: 25px;}
+
+
+#btn-add-course {  }
+
+#finished {margin-top:10px;}
+    #finished hr {margin-bottom:15px;}
+    #finished h2 {margin-bottom:10px;}
+#course_add_department_id {}
+
+#form-course-add #course_add_department_id {
+    margin-right: 20px;
+}
+
+
+
+
+/*/////////////////////////////////////////////  
+/ MY PROFILE                                 /
+///////////////////////////////////////////*/
+#my-profile .user-name {font-size: 20px; margin-bottom: 10px;}
+#my-profile #profile-summary .heading { font-style:italic; margin-bottom:10px; color:#555; }
+#my-profile #profile-summary p { font-size:0.75em; font-style:italic; line-height: 1.5em; }
+#my-profile #profile-summary hr {margin:15px;}
+#my-profile .content-inputarea {
+    position:relative;
+    padding-bottom:7px;
+
+}
+    #my-profile .content-inputarea .btn-toggle-container {
+        position:absolute;
+        top:5px;
+        right:5px;
+    }
+    #my-profile .content-inputarea .row-1 {margin-top:10px;} 
+    #my-profile .content-inputarea .row-1 .col-1 { float:left; width:33%; text-align: left; }
+    #my-profile .content-inputarea .row-1 .col-2 { float:left; width:34%; text-align: center; }
+    #my-profile .content-inputarea .row-1 .col-3 { float:left; width:33%; text-align: right; }
+
+    #my-profile .content-inputarea .row-2 {margin-top:10px;}
+    #my-profile .content-inputarea .row-2 .col-1 { float:left; width:47%; }
+    #my-profile .content-inputarea .row-2 .col-2 { float:left; width:47%; margin-left:3%; }
+
+    .btn-edprof-container { text-align:right; margin-top:5px;}
+
+    #my-profile .content-inputarea .row-3 {margin-bottom:10px}
+    #courses-quick-list { overflow:hidden; }
+    #courses-quick-list .col-1 {float:left; width: 12%; }
+    #courses-quick-list .col-2 {
+        float:left; 
+        width: 70%;
+        font-size:0.8em;
+        color:#555;
+    }
+        #courses-quick-list table {width:100%}
+        #courses-quick-list td {padding-bottom:8px}
+        #courses-quick-list .td-remove {text-align:right; padding-left:5px; }
+    #courses-quick-list .btn-edit-courses { float:right; }
+
+/*/////////////////////////////////////////////  
+/ EDIT PROFILE                               /
+///////////////////////////////////////////*/
+#edit-profile {}
+#edit-profile hr {margin:15px 0 20px 0}
+#edit-profile #profile-summary .heading { font-style:italic; margin-bottom:10px; color:#555; }
+#edit-profile #profile-summary p { font-size:0.75em; font-style:italic; line-height: 1.5em; }
+#edit-profile .content-inputarea .row-1 { margin-top:10px; }
+
+    #edit-profile .content-inputarea .row-1 .col-1 { float:left; width:47%; }
+    #edit-profile .content-inputarea .row-1 .col-2 { float:left; width:47%; margin-left:3%; }
+    #edit-profile label { display:block; margin-bottom:3px; }
+    #edit-profile #profileImageContainer { margin-bottom: 20px; }
+    #edit-profile .selMajorContainer {float:left; }
+    #edit-profile .selClassYearContainer { float:left; margin-left:20px; }
+    #edit-profile #sf_guard_user_profile_about,
+    #edit-profile #sf_guard_user_profile_activity { width:555px; height:120px; } /* net width=595px, -40px for internal padding */
+    #edit-profile .actions { text-align:right; margin-bottom:40px; }
+
+div.selector select { width:100%; height:100%; } /* make these selects clickable anywhere within their parent div */
+
+  /*/////////////////////////////////////////////  
+/ SEND INVITE FORM                               /
+///////////////////////////////////////////*/  
+
+#invite-form label { display:block; margin-bottom:3px; }
+
+#invite-email{
+   /* width:470px; /* net width=470, -20px left/right padding */
+    height:40px;
+    float:left;
+    margin-right:20px;
+    background: url(../images/bg-post-msg-ev1.png) no-repeat;
+
+
+}
+
+#invite-email input{
+    background-color: transparent;
+    border: medium none;
+    color: #666666;
+    font-family: Georgia,serif;
+    font-size: 13px;
+    font-style: italic;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+/*/////////////////////////////////////////////  
+/ DASHBOARD                                  /
+///////////////////////////////////////////*/
+/* 
+background-color: #c4c4c4; 
+border: 1px #aaaaaa solid;
+*/
+#post-form-widget {    
+    margin-top: 5px;
+    padding: 5px;            
+}
+#post-form-widget.mode-ev1 {
+    background: url(../images/bg-post-msg-ev1.png) no-repeat;
+}
+
+#form-sumit-ask {
+    vertical-align: bottom;
+}
+
+/*background: url(../images/bg-post-msg-cls.png) no-repeat;*/
+#post-form-widget.mode-cls {
+        
+}
+        #post-form-widget.mode-ev1 #groups-selector,
+        #post-form-widget.mode-ev1 #class-selector {
+            display:none;   
+        }
+        
+        
+#post-form-widget.with-pin label#pin {
+    width: 20px;
+    height: 20px;    
+    background: url(../images/pin_gray.png) no-repeat;
+    background-position: center center;
+    background-size: 20px 20px;
+    margin-right: 5px;
+    cursor: pointer;
+    float: left;
+}
+
+#post-form-widget.with-pin input[type=checkbox] {
+    display: none;
+}
+#post-form-widget.with-pin input:checked + label#pin {
+    width: 20px;
+    height: 20px;
+    float: left;
+    background: url(../images/pin.png) no-repeat;
+    background-position: center center;
+    background-size: 20px 20px;
+}
+    
+/*width: 860px;*/
+#post-form-widget #post_content { 
+vertical-align: top;
+width: 730px;
+height: 36px;
+background: #ffffff;
+padding: 10px;
+margin: 0 5px 0 0;
+font-family: Georgia,serif;
+font-size: 13px;
+color: #808080;
+font-style: italic;
+overflow: auto;
+resize: none;
+outline: none;
+line-height: 18px;
+-webkit-transition: height 0.2s;
+-moz-transition: height 0.2s;
+transition: height 0.2s;
+border: 1px solid #aaa;
+border-radius: 3px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+-webkit-box-shadow: inset 2px 2px 2px 0px #dddddd;
+-moz-box-shadow: inset 2px 2px 2px 0px #dddddd;
+box-shadow: inset 2px 2px 2px 0px #dddddd; 
+}
+
+/*
+vertical-align: top;
+width: 450px;
+height: 36px;
+background: #ffffff;
+padding: 10px;
+margin: 0 15px 0 0;
+font-family: Georgia,serif;
+font-size: 13px;
+color: #808080;
+font-style: italic;
+overflow: auto;
+resize: none;
+outline: none;
+line-height: 18px;
+-webkit-transition: height 0.2s;
+-moz-transition: height 0.2s;
+transition: height 0.2s;
+border: 1px solid #aaa;
+border-radius: 3px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+-webkit-box-shadow: inset 2px 2px 2px 0px #dddddd;
+-moz-box-shadow: inset 2px 2px 2px 0px #dddddd;
+box-shadow: inset 2px 2px 2px 0px #dddddd;
+*/
+
+/*width: 840px; */
+#post-form-widget.with-pin #post_content {
+    width: 710px;
+}
+
+.upload-status {
+    color: #004078;
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: lowercase;
+}
+
+.hide-content-text {
+    display: none;
+}
+
+.href-cursor {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.href-cursor-top {
+    margin-right: 16px;
+    line-height: 18px;
+    color: #ffffff;
+}
+
+.user-logo img {
+    float: left;
+    margin-right: 10px;
+    border: 0;
+}
+
+#linkclear {
+
+}
+
+
+#clearImage {
+    cursor: pointer;    
+}
+
+.span-border {
+    border: 1px solid #aaaaaa;
+    padding: 1px;
+}
+
+    #post-form-widget #groups-selector {
+        float:right; margin-top:4px; margin-right:7px;
+    }
+        #post-form-widget #groups-selector a {
+            width:32px; height:32px; display:block;
+            background: url(../images/tbx-groups-spr.png) no-repeat;
+            background-position: 0 0;
+        }
+            #post-form-widget #groups-selector a.on {background-position: 0 -32px}
+
+#post-form-widget #class-selector {
+    float:right; 
+    margin-top:4px; 
+    margin-right:7px;
+}
+#post-form-widget #class-selector a {
+    width:48px; 
+    height:32px; 
+    display:block;
+    background: url(../images/tbx-class-spr.png) no-repeat;
+    background-position: 0 0;
+}
+#post-form-widget #class-selector a.on {
+    background-position: 0 -32px
+}
+
+.image-like {
+    margin: 0px;
+    padding: 0px;
+    width:53px;
+    height: 20px;
+    background: url(../images/icon-like.png) no-repeat;
+    background-position: left center;
+    background-size: 20px 20px;
+    text-align: right;
+    cursor: pointer;
+}
+
+.image-like .count-like {
+    font-size: 12px;
+    top: 6px;
+    position: relative;
+    text-align: left;
+    width: 24px;
+    float: right;
+}
+.like-status {
+    font-size: 10px;
+}
+
+#post-form-widget #class-upload {
+    float:left; 
+    margin-top:4px; 
+    margin-right:7px;
+    margin-left: 5px;
+    background: url(../images/icon-upload.png) no-repeat;
+    background-position: center center;
+    background-size: 32px 32px;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+}
+
+#post_attachment_url,
+#post_attachment_id {
+    display: none;
+}
+
+.post-count {
+    display: block;
+    padding: 0;
+    font-size: 9pt;
+}
+
+.post-count p {
+    display: block;
+    padding: 0;
+    font-size: 9pt;
+}
+
+.post-name {
+    float: left;
+}
+
+.post-like {
+    float: right;
+}
+
+.no-courses-note {
+    margin: 25px;
+    text-align: center;
+}
+
+/* display: none; */
+.ui-state-default {
+   display: none; 
+}
+
+/*/////////////////////////////////////////////  
+/ NOTIFICATION LIST (PART OF DASHBOARD)      /
+///////////////////////////////////////////*/
+#notification-list {}
+
+#notification-list .pinned-posts {
+    margin-bottom: 30px;    
+    padding: 0px 0px 0px 0px;
+}
+
+.pinned-posts .post-row {
+    background-color: #fffee5;
+    padding: 5px 10px 0px 10px;
+}
+
+    #notification-tabs { padding:0; float: left; width: 100%;}
+    
+    a.new {
+        background-color: lightgreen;
+        padding: 1px;
+        min-height: 0px;
+        min-width: 0px;
+        font-size: 10px;
+        color: darkslategray;
+        border-radius: 2px;
+        cursor: pointer;
+        vertical-align: top;
+        margin-left: 2px;
+    }
+    
+#nav a.new {
+    margin-left: 5px;
+    font-size: 12px;
+}    
+    
+    #notification-list .row {  }
+        #notification-list .heading { font-size:1.3em; margin-bottom:10px; font-style: normal; }
+        #notification-list .name {padding-bottom: 20px; font-size:1.3em; }
+            #notification-list .name img,
+            #notification-list .name a { color:#78d753; }
+            #notification-list .user-name000000000{float:left;}
+            #notification-list .status-icon{float:left; margin-left:10px; }
+            #notification-list .posted-in {float:left; margin-left:15px; font-size:0.8em; font-family: Georgia; }
+                #notification-list .posted-in .dept-course-code { font-style: normal; font-size:1.3em; font-family: Georgia; }
+
+#notification-list .content { 
+    word-wrap: break-word;
+    margin-top: 5px;
+    padding-top: 20px;
+}
+#notification-list .content p { 
+    margin-bottom:5px;     
+}
+        #notification-list .created-at { margin-top: 10px;}    
+        #notification-list .vert-rule { margin:0 10px; float:left; }
+
+        #notification-list .col-1 { float:left; width:50px; margin-right:20px; background-color:none; }
+        #notification-list .col-2 { float:left; width:450px; background-color:none; }
+
+/* width:530px;  */        
+#notification-list .post-row .col-2 { 
+    width: 100%; 
+}
+
+            #notification-list .col-2-foot { margin-top:10px; line-height:20px; }
+            #notification-list .col-2 .actions { float:left; }
+                #notification-list .col-2 .actions a:link, 
+                #notification-list .col-2 .actions a:visited { color:#78d753; font-style:normal; }
+        #notification-list .col-3 { float:right; width:110px; text-align:right; background-color:none }
+
+        #notification-list .comment-add-form,
+        #notification-list .comment-row {
+            padding: 10px;
+            background: #dedede; /* Default BG */
+            background: -moz-linear-gradient(top, #ebebeb, #dedede); /* firefox */
+            background: -webkit-gradient(linear, left top, left bottom, from(#ebebeb), to(#dedede)); /* webkit */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebebeb', endColorstr='#dedede',GradientType=0 ); /* IE6-8 */
+            background: -ms-linear-gradient(top, #ebebeb 0%,#dedede 100%); /* IE10+ */
+            border:1px solid #ddd;
+            margin-left: 37px;
+            font-size: 0.9em;
+        }
+
+            #notification-list .comment-add-form input[type="text"] { width:300px; margin:0; margin-right:20px; margin-top:2px; }
+
+            #notification-list .comment-row .col-1 { width:32px; margin-right:10px; }
+            #notification-list .comment-row .col-2 { width:auto; }
+
+/* width:525px; */
+#notification-list .comment-row .col-2 { 
+    width: 100%; 
+}   
+
+    #notification-list .list-item-friend .heading a:link,
+    #notification-list .list-item-friend .heading a:visited {color:#78d753;}
+
+    #notification-list .post-edit-form input[type="text"] { width: 300px; margin: 2px 20px 0 0; }
+
+
+#SubscrMenu {
+    display: inline-block;
+}
+
+#nav {
+    display: none;
+    position: absolute;
+    background: #222222;
+    left: 125px;
+    top: 30px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.vert-menu {
+    height: 20px;
+    padding: 4%;
+    width: 92%;
+}
+
+.vert-menu:hover {
+    background-color: #444444;
+}   
+
+.l-float textarea.wg {
+    overflow: hidden;
+    word-wrap: break-word;
+    resize: none;
+    height: 36px;
+    vertical-align: top;
+    width: 730px;    
+    background: #ffffff;
+    padding: 10px;
+    margin: 0 5px 0 0;
+    font-family: Georgia,serif;
+    font-size: 13px;
+    color: #808080;
+    font-style: italic;
+    overflow: auto;
+    resize: none;
+    outline: none;
+    line-height: 18px;
+    -webkit-transition: height 0.2s;
+    -moz-transition: height 0.2s;
+    transition: height 0.2s;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -webkit-box-shadow: inset 2px 2px 2px 0px #dddddd;
+    -moz-box-shadow: inset 2px 2px 2px 0px #dddddd;
+    box-shadow: inset 2px 2px 2px 0px #dddddd;
+    -webkit-appearance: textarea;
+}
+
+.l-float textarea.cm {
+    width: 739px;
+}
+
+.l-float textarea.cc {
+    width: 739px;
+    margin-top: 5px;
+}
+
+.pin-badge {
+    width: 20px;
+    height: 20px;
+    float: right;
+    background: url(../images/pin.png) no-repeat;
+    background-position: center center;
+    background-size: 20px 20px;
+}
+
+.my-courses {
+    color: #555;
+    width: 70%;
+    font-size: 0.8em;
+    padding-left: 70px;
+}

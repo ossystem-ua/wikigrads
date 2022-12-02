@@ -1,0 +1,295 @@
+/*////////////////////////////////////////////////////////
+//                                                     //
+// CSS RESET                                          //
+//                                                   //
+////////////////////////////////////////////////////*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain) */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+/*////////////////////////////////////////////////////////
+//                                                     //
+// FONT FACE                                          //
+//                                                   //
+////////////////////////////////////////////////////*/
+/* google webfonts */
+@font-face {
+  font-family: 'Crete Round';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Crete Round'), local('CreteRound-Regular'), url(http://themes.googleusercontent.com/static/fonts/creteround/v2/ZCcPJiCGOzh84o2siPk48brIa-7acMAeDBVuclsi6Gc.woff) format('woff');
+}
+
+
+
+/*////////////////////////////////////////////////////////
+//                                                     //
+// GENERAL/COMMON                                     //
+//                                                   //
+////////////////////////////////////////////////////*/
+html { 
+  height: 100%;
+}
+
+body {
+  background: #fff url(../images/bg-global.png) repeat-y center;
+  font-family: Georgia, serif;
+  height: 100%;
+}
+
+/* contains the left nav and content divs */
+#global-container {
+  margin-left: auto;
+  margin-right: auto;
+  width:960px;
+  padding-top:30px;
+  height:100%;
+}
+
+
+
+/*////////////////////////////////////////////////////////
+//                                                     //
+// TOP BAR                                            //
+//                                                   //
+////////////////////////////////////////////////////*/
+/* 
+background: url('../images/bg-topnav.png'); 
+color: #628253;
+*/
+#top-bar {
+  position: fixed;
+  right: 50%;
+  margin-right: -480px;
+  width: 950px; /* net width = 960px. [-10px padding-left] */
+  height: 30px;  
+  background: url('../images/bg-botnav.png');
+  font-family: Georgia;
+  font-style: italic;
+  font-size: 13px;
+  color: #ffffff;
+  padding-left:10px;
+  z-index:1000;
+}
+  #top-bar a:link,
+  #top-bar a:visited {
+    margin-right: 16px;
+    line-height: 30px;
+    color: #ffffff; text-decoration: none;
+  }
+  #top-bar a:hover {
+    color: #fff;  text-decoration: underline;
+  }
+  #top-bar a:active {
+    color: #fff;
+  }
+
+
+  #top-bar .user-invite{
+      float: right;
+  }
+  
+#top-bar .top-settings {
+    float: right;
+    background: url('../images/icon-settings.png') no-repeat;
+    background-position: center center;
+    background-size: 28px 28px;    
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    margin: 0px;
+    margin-right: 1px;
+}
+
+#top-bar .top-settings:hover {
+    background-color: #222222;
+}
+
+
+.top-setting-menu {
+    position: absolute;
+    color: #000000;
+    right: 0px;
+    border: #111111 1px solid;
+    top: 30px;    
+    text-align: center;
+    padding: 0px;    
+    margin: 0px;
+    background-color: #222222;
+    display: none;
+}
+
+.top-setting-menu UL {
+    
+}
+
+.top-setting-menu UL LI {
+    text-align: left;
+    padding: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.top-setting-menu UL LI:hover {
+    background-color: #444444;
+}
+
+.top-setting-menu UL LI A {
+    margin-right: 0px !important;   
+}
+
+.top-setting-menu UL LI A:hover {
+    text-decoration: none !important;
+}
+
+.logout-pic {
+    background-image: url(../images/icon-onoff.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-position-x: 0px;
+    background-size: 16px 16px;
+    display: block;
+    padding-left: 18px;
+}
+
+.newLogo {
+    float: left;
+}
+
+
+/*////////////////////////////////////////////////////////
+//                                                     //
+// LEFT NAV                                           //
+//                                                   //
+////////////////////////////////////////////////////*/
+#left-nav-container {
+  width:290px;
+  float:left;
+  background: url('../images/bg-leftnav.png');
+  background-repeat: repeat-y;
+  min-height:100%;
+}
+
+    
+    
+    
+/*////////////////////////////////////////////////////////
+//                                                     //
+// CONTENT                                            //
+//                                                   //
+////////////////////////////////////////////////////*/  
+/*width: 670px;*/
+#content-container {
+  position: relative;
+  width: 670px;
+  float: right;
+  background-color: #f1f1f1;
+  min-height: 100%;
+}
+
+
+
+/*////////////////////////////////////////////////////////
+//                                                     //
+// FOOTER                                             //
+//                                                   //
+////////////////////////////////////////////////////*/  
+#footer {
+  position:fixed;
+  right: 50%;
+  margin-right: -480px;
+  width: 940px; /* net width = 960px. [-10px padding-left, -10px padding-right] */
+  bottom: 0px;
+  height: 30px;
+  background: url('../images/bg-botnav.png');
+  color: white;
+  font-family: Georgia;
+  font-style: italic;
+  font-size: 13px;
+  line-height:30px;
+  padding: 0 10px;
+  z-index:1000;
+}
+  #footerrights {
+    float:left;
+    width: 270px;
+  }
+  #footlinks {
+    text-align: right;
+    float:right;
+  }
+  #footer .link-divider {
+    margin: 0 8px;
+  }
+  #footer a:link, #footer a:visited { color: #e0e0e0; text-decoration: none; }
+  #footer a:hover {  color: #fff;  text-decoration: underline; }
+  #footer a:active { color: #fff; }
+
+
+
+
+
+
+
+
+
+
+/*
+nav
+{
+    margin: 0px auto;
+    width: 900px;
+}
+
+nav li
+{
+    display: inline;
+}
+*/

@@ -1,0 +1,22 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/07-Databases
+
+all:
+  doctrine:
+    class: sfDoctrineDatabase
+    param:
+      dsn:      mysql:host=sql.lan;dbname=wikigrads
+      username: wikigrads
+      password: 9NtwS3ZxWQQ5EmFY
+      attributes:
+        use_dql_callbacks: true
+
+#all:
+#  doctrine:
+#    class: sfDoctrineDatabase
+#    param:
+#      dsn:      mysql:host=localhost;dbname=wikigrads
+#      username: wikigrads
+#      password: b1u34ndgo1d
+#      attributes:
+#        use_dql_callbacks: true

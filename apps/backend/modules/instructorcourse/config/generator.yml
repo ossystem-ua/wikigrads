@@ -1,0 +1,36 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           instructorcourse
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          instructorcourse
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        display:
+          - access
+      list:
+        display:
+          - user
+          - course
+          - access
+        title: Instructor & Course
+        table_method: doSortInseructorList
+
+      filter:
+        display:
+          - user_id
+          - course_id
+      form: ~
+        #class: InstructorCourseForm
+      edit:
+        title: Edit Instructor & Course
+      new:
+        title: New Instructor & Course

@@ -1,0 +1,429 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# ------------------------------
+# top navigation rules
+
+about:
+  url: /about
+  param: { module: main, action: about }
+
+blog:
+  url:   /
+  param: { module: main, action: index }
+
+contact:
+  url: /contact
+  param: { module: main, action: contact }
+
+faq:
+  url: /faq
+  param: { module: main, action: faq }
+
+keep_in_touch:
+  url: /keep-in-touch
+  param: { module: main, action: keepInTouch }
+
+student_engagement:
+  url: /student-engagement
+  param: { module: main, action: studentEngagement }
+
+terms:
+  url: /terms
+  param: { module: main, action: terms }
+
+protect_privacy:
+  url: /protect_privacy
+  param: { module: main, action: privacy }
+
+why_wiki:
+  url: /why-wikigrads
+  param: { module: main, action: whyWikigrads }
+
+tour:
+  url: /tour
+  param: { module: main, action: tour }
+
+tour2:
+  url: /tour2
+  param: { module: main, action: tour2 }
+
+tour3:
+  url: /tour3
+  param: { module: main, action: tour3 }
+
+useruploads:
+  url: /useruploads
+  param: { module: userAttachment, action: index }
+
+useruploaddoc:
+  url: /useruploaddoc
+  param: { module: userAttachment, action: loaddoc }
+
+getattachment:
+  url: /getattachment
+  param: { module: userAttachment, action: getattach }
+
+delattachment:
+  url: /delattachment
+  param: { module: userAttachment, action: delattach }
+
+
+userlike:
+  url: /userlike
+  param: { module: userLike, action: index }
+
+checkcourseaccess:
+  url: /checkcourseaccess
+  param: { module: course, action: check }
+
+#ingress rules, promotionals, qr codes and misc
+
+qr01:
+  url: /qr01
+  param: { module: main, action: tour }
+
+# ------------------------------
+# course rules
+
+ajax_course_delete:
+  url: /ajax/delete-course/:id
+  param: { module: course, action: ajaxDelete }
+
+course_add_another:  # the user is redirected to this after adding a course, it sets a REQUEST var 'continue'
+  url: /add-another-course
+  param: {module: course, action: add, add_another: 1}
+
+course_add:
+  url: /add-course
+  param: {module: course, action: add}
+
+course_delete:
+  url: /delete-course
+  param: {module: course, action: delete}
+
+edit_courses:
+  url: /edit-courses
+  param: {module: course, action: list}
+
+course_one_add:
+  url: /add-one-course
+  param: {module: course, action: addOne}
+
+course_one_instructor_add:
+  url: /add-one-instructor-course
+  param: {module: course, action: addInstructorOne}
+# ------------------------------
+# document rules
+
+ajax_document_delete:
+  url: /ajax/delete-document/:id
+  param: {module: document, action: ajaxDelete}
+
+document:
+  url: /document
+  param: {module: document, action: index}
+
+document_course_list:
+  url: /documents/:type/:slug/*
+  param: {module: document, action: list, page: 1}
+
+document_download:
+  url: /download-document/:slug
+  param: {module: document, action: download}
+
+document_list:
+  url: /documents/:type/*
+  param: {module: document, action: list}
+
+my_documents:
+  url: /my-documents
+  param: {module: document, action: myList}
+
+# ------------------------------
+# event rules
+
+my_events:
+  url: /my-events
+  param: {module: event, action: list}
+
+#school rules
+school_activity:
+  url: /school-activity
+  param: {module: school, action: activity}
+
+# ------------------------------
+# default rules
+
+homepage:
+  url:   /
+  param: { module: main, action: index }
+
+register:
+  url: /register
+  param: { module: main, action: register }
+
+# ------------------------------
+# friend rules
+
+ajax_friend_request_add:
+  url: /add-friend-request/:id
+  param: { module: friend, action: ajaxFriendRequestAdd }
+
+ajax_friend_status_icon_friend_request:
+  url: /fsicon-friend-request/:id
+  param: { module: friend, action: ajaxFriendStatusIconFriendRequest }
+
+ajax_friend_request_respond:
+  url: /respond-friend-request/:response/:user_id
+  param: { module: friend, action: ajaxFriendRequestRespond }
+
+ajax_friend_delete:
+  url: /delete-friend/:id
+  param: {module: friend, action: ajaxFriendDelete}
+
+#friend_list:
+#  url: /friends
+#  param: { module: friend, action: friendList }
+
+#friend_request_pending_list:
+#  url: /pending-friend-request
+#  param: { module: friend, action: friendRequestPendingList }
+
+# ------------------------------
+# notification rules
+
+notification_course_list:
+  url: /notification/:type/:slug/*
+  param: {module: notification, action: list}
+
+notification_comment_list:
+  url: /notification/comment-list/:id
+  param: {module: notification, action: commentList}
+
+notification_list:
+  url: /notification/list/:type
+  param: {module: notification, action: list}
+
+notification_delete_post:
+  url: /ajax/delete-post/:notification_id
+  param: { module: notification, action: deletePost }
+
+notification_user_list:
+  url: /private_feed/user_list/:type/:id
+  param: {module: notification, action: userList}
+
+notification_private_feed:
+  url: /private_notification/:id/:user
+  param: {module: notification, action: privateFeed}
+
+notification_private_list:
+  url: /private_notification/:type/:id/:user/*
+  param: {module: notification, action: privateFeed}
+
+notification_scrape_url:
+  url: /ajax/scrape_url
+  param: {module: notification, action: scrapeUrl}
+
+# ------------------------------
+# post rules
+
+ajax_comment_add:
+  url: /ajax/add-comment/*
+  param: { module: post, action: ajaxAddComment}
+
+ajax_comment_edit:
+  url: /ajax/edit-comment/*
+  param: { module: post, action: ajaxEditComment }
+
+wiki_post_add:
+  url: /wiki/add-post
+  param: { module: post, action: wikiAddPost}
+
+ajax_post_add:
+  url: /ajax/add-post
+  param: { module: post, action: ajaxAddPost}
+
+ajax_post_list:
+  url: /ajax/post-list
+  param: { module: post, action: ajaxPostList}
+
+process_dashboard_post_form:
+  url: /post/process-dasboard-post
+  param: { module: post, action: processDashboardPostForm }
+
+ajax_post_edit:
+  url: /ajax/edit-post/*
+  param: { module: post, action: ajaxEditPost }
+
+post_delete_comment:
+  url: /post/delete-comment/:post_id
+  param: { module: post, action: deleteComment }
+
+post_flag_as_inappropriate:
+  url: /post/flag-as-inappropriate/*
+  param: { module: post, action: flagAsInappropriate }
+
+flaggetpost:
+  url: /flaggetpost
+  param: { module: post, action: flaggetpost }
+
+
+editor:
+  url: /editor
+  param: { module: notification, action: editor}
+
+mathEditor:
+  url: /editor/math
+  param: { module: notification, action: mathEditor}
+# ------------------------------
+# user rules
+#
+# Quick User Info: to have any page display with quick user info expanded, add "qui_expand: 1" to the param list.
+
+dashboard:
+  url: /dashboard
+  param: { module: sfGuardUser, action: dashboard }
+
+privacy:
+  url: /privacy
+  param: { module: sfGuardUser, action: privacy }
+
+editemail:
+  url: /editemail
+  param: { module: sfGuardUser, action: editemail }
+
+editpass:
+  url: /editpass
+  param: { module: sfGuardUser, action: editpass }
+
+editemails:
+  url: /editemails
+  param: { module: sfGuardUser, action: editemails }
+
+officer:
+  url: /officer
+  param: { module: sfGuardUser, action: officer }
+
+officer_type:
+  url: /officer/:type
+  param: { module: sfGuardUser, action: officer }
+
+officer_page:
+  url: /officer/:type/:page
+  param: { module: sfGuardUser, action: officer }
+
+officer_join_course:
+  url: /officer-join-course
+  param: { module: sfGuardUser, action: officerJoin }
+
+editaccess:
+  url: /editaccess
+  param: { module: sfGuardUser, action: editaccess }
+
+delaccess:
+  url: /delaccess
+  param: { module: sfGuardUser, action: delaccess }
+
+delete_access:
+  url: /deleteAccess
+  param: { module: sfGuardUser, action: deleteAccess }
+
+my_profile:
+  url: /my-profile
+  param: {module: sfGuardUser, action: index, qui_expand: 1}
+
+my_profile_first:
+  url: /my-profile-confirmed
+  param: {module: sfGuardUser, action: firstProfileView, qui_expand: 1}
+
+new_member_list:
+  url: /new-members
+  param: { module: sfGuardUser, action: newMemberList }
+
+user:
+  url: /profile/:id/:name
+  param: { module: sfGuardUser, action: index }
+
+user_edit:
+  url: /edit-user
+  param: { module: sfGuardUser, action: edit, qui_expand: 1 }
+
+user_invite:
+  url: /invite
+  param: {module: sfGuardUser, action: invite}
+
+update_counters:
+  url: /update_counters
+  param: {module: sfGuardUser, action: UpdateCounters}
+
+reset_counter:
+  url: /reset_counter/:id
+  param: {module: sfGuardUser, action: ResetCounter}
+
+instructor_course_delete:
+  url: /instructor-course-delete
+  param: {module: sfGuardUser, action: removeInstructor}
+
+#private_feed:
+#    url: /private_feed/:id/:user
+#    param: {module: privateFeed, action: privateFeed }
+#
+#private_feed_list:
+#    url: /private_feed_list/:type/:id/*
+#    param: {module: privateFeed, action: userList}
+
+# sfDoctrineApplyPlugin
+apply:
+  url:  /apply
+  param: { module: sfApply, action: apply }
+
+apply0:
+  url:  /apply/0
+  param: { module: sfApply, action: apply }
+
+apply1:
+  url:  /apply/1
+  param: { module: sfApply, action: apply }
+
+apply_reset:
+  url: /sfApply/reset
+  param: { module: sfApply, action: reset }
+
+forgot:
+  url: /forgot
+  param: { module: sfApply, action: resetRequest }
+
+forgot_confirm:
+  url: /sfApply/confirm/validate/:validate
+  param: { module: sfApply, action: confirm }
+
+update_school_department_dropdown:
+  url: /sfApply/update-school-department
+  param: {module: sfApply, action: ajaxDepartmentList}
+
+autotextcomplite:
+  url: /autocomplite/:table
+  param: { module: main, action: autotextcomplite }
+
+connect:
+  url: /connect
+  param: { module: connect, action: index }
+
+my_students:
+  url: /my-students/:course
+  param: { module: myStudents, action: index }
+  
+my_students_order:
+  url: /my-students/:course/:order/:desc
+  param: { module: myStudents, action: index }
+# ------------------------------
+# generic rules
+# please, remove them by adding more specific rules
+
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

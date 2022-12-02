@@ -1,0 +1,162 @@
+
+
+.slide-title {
+        font-family: "Lato-Light";
+	font-weight: lighter;
+        font-size: 30px;
+        color: #f07d18;
+}
+.overview li p {
+    font-size: 20px;
+    color: #5b696a;
+    height: 110px !important;
+    border-bottom: 1px solid #bac6c3;
+    margin-bottom: 20px;
+    width: 1085px;
+}
+.overview li img {
+    width: 1085px;
+}
+#slider1 { 
+    height: 1%; 
+    overflow: hidden; 
+    padding: 0 0 10px;
+    background-color: #dee5e6;
+    border-left: 40px solid #dee5e6;
+    border-right: 40px solid #dee5e6;
+    border-bottom: 40px solid #dee5e6;
+    position: relative;
+    width: 1085px;
+    margin: 0 auto;
+}
+#slider1 .viewport { 
+    float: left; 
+    width: 1090px; 
+    height: 955px; 
+    overflow: hidden; 
+    position: relative; 
+}
+#slider1 .buttons {
+    height: 109px;
+    width: 69px;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    text-decoration: none;
+    top: 500px;
+    z-index: 9;
+}
+#slider1 .next {
+    right: 0px;
+    background: url('/images/tour/arrow_right_default.png') no-repeat;
+}
+#slider1 .prev {
+    left: 1px;
+    background: url('/images/tour/arrow_left_default.png') no-repeat;
+}
+#slider1 .next:hover {
+    background: url('/images/tour/arrow_right_active.png') no-repeat;
+}
+#slider1 .prev:hover {
+    left: 0px;
+    background: url('/images/tour/arrow_left_active.png') no-repeat;
+}
+#slider1 .disable { 
+    visibility: hidden; 
+}
+#slider1 .overview { 
+    list-style: none; 
+    position: absolute; 
+    padding: 0; 
+    margin: 0; 
+    width: 1140px; 
+    left: 0; 
+    top: 0; 
+}
+#slider1 .overview li{ 
+    float: left; 
+    padding: 1px; 
+    height: 121px; 
+    width: 1140px;
+}
+
+@media (min-width: 1001px) and (max-width: 1024px) {
+    #slider1,
+    .overview li h2,
+    .overview li p,
+    .overview li img {
+        width: 900px;
+    }
+    #slider1 .viewport {
+        height: 890px;
+    }
+    #slider1 .buttons {
+        top: 430px;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1000px) {
+    #slider1,
+    .overview li h2,
+    .overview li p,
+    .overview li img {
+        width: 790px;
+    }
+    #slider1 .overview li {
+        width: 870px;
+    }
+    .overview li p {
+        font-size: 14px;
+        height: 100px;
+    }
+    .overview li h2 {
+        font-size: 14px;
+    }
+    #slider1 .viewport {
+        height: 800px;
+    }
+    #slider1 .buttons {
+        top: 420px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 899px) {
+    #slider1,
+    .overview li h2,
+    .overview li p,
+    .overview li img {
+        width: 590px;
+    }
+    #slider1 .overview li {
+        width: 700px;
+    }
+    .overview li p {
+        font-size: 14px;
+        height: 100px;
+    }
+    .overview li h2 {
+        font-size: 14px;
+    }
+    #slider1 .viewport {
+        height: 650px;
+    }
+    #slider1 .buttons {
+        top: 400px;
+    }
+    #slider1 .buttons {
+    height: 70px;
+    width: 50px;
+    }
+    #slider1 .prev {
+        background: url("/images/tour/arrow_left_default.png") no-repeat scroll 60% 50% rgba(0, 0, 0, 0);
+    }
+    #slider1 .prev:hover {
+        background: url("/images/tour/arrow_left_active.png") no-repeat scroll 60% 50% rgba(0, 0, 0, 0);
+    }
+    #slider1 .next {
+        background: url("/images/tour/arrow_right_default.png") no-repeat scroll 45% 45% rgba(0, 0, 0, 0);
+    }
+    #slider1 .next:hover {
+        background: url("/images/tour/arrow_right_active.png") no-repeat scroll 45% 45% rgba(0, 0, 0, 0);
+    }
+}

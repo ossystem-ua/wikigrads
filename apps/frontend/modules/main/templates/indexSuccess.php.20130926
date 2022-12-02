@@ -1,0 +1,20 @@
+<div class="content-pad">
+    <div id="about">
+        <p class="mission">WikiGrads is a FREE social learning platform designed to complement traditional lectures.  Our mission is to help you learn with and from your classmates.</p>
+    </div>
+    <div class="home-section border-bottom">
+        <?php echo image_tag('wg-home-2.png',array()) ?>
+        <p>Connect with classmates and peers from other academic institutions.</p>
+    </div>
+    
+    <div class="home-section border-bottom">
+        <?php echo image_tag('wg-home.png',array()) ?>
+        <p>Ask and answer questions. Share and discuss course material.</p>
+    </div>    
+    
+    <div class="home-section">
+        <?php echo image_tag('wg-home-3.png',array()) ?>
+        <p>24/7 access to tutors in higher education.</p>
+    </div>    
+    
+</div>

@@ -1,0 +1,32 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        Wikigrads Admin
+    description:  Wikigrads Admin
+    keywords:     Wikigrads Admin
+    #language:     en
+    #robots:       index, follow
+
+  stylesheets:
+    - backend: { position: last }
+    - main: { position: last }
+    - ui-lightness/jquery-ui-1.10.3.custom.min.css
+#    - uidatepicker.css
+  #  - layout: { position: last}
+
+  javascripts:
+    - lib/jquery-1.8.0.min.js
+    - jquery-ui-1.10.3.custom.min.js
+#    - wiki/admin.js
+#    - uidatepicker.js
+#    - double_list.js
+#    - jquery.autocomplete.js
+#    - wiki/jquery-ui.js
+
+  has_layout:     true
+  layout:         layout

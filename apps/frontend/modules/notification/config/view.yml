@@ -1,0 +1,24 @@
+
+listSuccess:
+
+  javascripts:
+    - math_editor/latexit.js
+    - math_editor/eq_config.js
+    - math_editor/eq_editor-lite-15.js
+
+
+  stylesheets:
+    - math_editor/equation-embed.css
+    - math_editor/ie6.css
+    
+privateFeedSuccess:
+
+  javascripts:
+    - math_editor/latexit.js
+    - math_editor/eq_config.js
+    - math_editor/eq_editor-lite-15.js
+
+
+  stylesheets:
+    - math_editor/equation-embed.css
+    - math_editor/ie6.css

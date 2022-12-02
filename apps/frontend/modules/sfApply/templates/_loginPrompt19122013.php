@@ -1,0 +1,60 @@
+<?php use_helper('I18N') ?>
+<?php $is_error = $sf_user->hasFlash('login_error') ?>
+<div id="login">
+	<form method="POST" action="<?php echo url_for("@homepage") ?>" name="sf_guard_signin" id="sf_guard_signin" class="sf_apply_signin_inline">
+            <?php echo $form->renderGlobalErrors(); ?>
+            <?php echo $form->renderHiddenFields(); ?>
+
+            <div class="clear-float">
+                <div id="logintag">
+                    Signin to your profile
+                    <!--
+                    <?php echo image_tag("tag-signin.png", array('alt'=>"Signin to your Profile", 'width'=>"175", 'height'=>"20"))?>
+                    -->
+                </div>
+
+                <div id="loginremember">
+                        <?php echo $form['remember']->render(array()); ?>
+                        <?php echo $form['remember']->renderLabel('Remember') ?>
+                        <?php echo $form['remember']->renderError()?>
+
+                        <SPAN CLASS="<?php echo ($is_error) ? 'error-forgot' : 'forgot' ?>">
+                                <?php echo link_to(__('Forgot Your Password?'), '@forgot')  ?>
+                        </SPAN>
+                </div>
+
+                <div id="loginusername">
+                        <?php echo $form['username']->render(array(
+                                $defaultval = "Email Address",
+                                'class' => 'shade '.($form['username']->hasError() ? 'form-error' : ''),
+                                'value' => $defaultval,
+                                'onfocus' => 'formFieldFocus(this,"'.$defaultval.'",0)',
+                                'onblur' => 'formFieldBlur(this,"'.$defaultval.'",0)'
+                        )); ?>
+                </div>
+
+
+                <div id="loginpassword">
+                        <?php 
+                                $defaultval = "Password";
+                                echo $form['password']->render(array(
+                                'type' => 'text',
+                                'autocomplete' => 'true',
+                                'class' => 'shade '.($form['password']->hasError() ? 'form-error' : ''),
+                                'value' => $defaultval,
+                                'id' => 'password',
+                                'onfocus' => 'formFieldFocus(this,"'.$defaultval.'",1)',
+                                'onblur' => 'formFieldBlur(this,"'.$defaultval.'",1)'
+                        )); ?>
+                </div>
+
+                <div id="loginsignin">
+                        <input type=image value="<?php echo __('sign in') ?>" src="<?php echo image_path("lnav-login")?>" id="loginbutton" />
+                </div>
+            </div>
+
+            <?php if ($sf_user->hasFlash('login_error')) : ?>
+                <div class="login-error"><?php echo $sf_user->getFlash('login_error') ?></div>
+            <?php endif; ?>
+	</form>
+</div>

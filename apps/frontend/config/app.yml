@@ -1,0 +1,127 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/11-App
+
+dev:
+  address:
+    noreply: no-reply@wikigrads.com
+    contact: hmonroy@endertech.com
+    feedback: hmonroy@endertech.com
+#    noreply: hmonroy@endertech.com
+
+  javascript:
+      - lib/jquery-1.8.0.min.js
+      - jquery-ui-1.10.3.custom.min.js
+      - jquery.jcarousel.min.js
+      - wiki/main.js
+      - tour3.js
+      - lightbox.js
+
+
+  stylesheet:
+      - ui-lightness/jquery-ui-1.10.3.custom.min.css
+      - new_style_main.css
+      - tour3.css
+      - lightbox.css
+      - responsive.css
+
+prod:
+  address:
+    feedback: lucas@wikigrads.com
+
+  # ./symfony optimize:assets frontend --type=all --env=prod
+  np_assets_optimizer_plugin:
+    enabled: true                          # status of the plugin
+    class: npAssetsOptimizerService        # the plugin service class to use
+    configuration:                         # optimization service configuration
+      javascript:                          # Javascript optimizer configuration
+        enabled: true                      # status of optimization
+        class: npOptimizerJavascript       # the javascript optimizer class to use
+        params:                            # optimizer class configuration
+          driver: JSMin                    # javascript optimization driver name
+          destination: /js/optimized.js    # destination path for optimized .js file
+          timestamp: true                  # adds a timestamp to the combined file url
+          files:                           # list of js assets to optimize and combine
+            - wg-pre.js                    # contains any js that needs to be run/set up before any of the scripts below are loaded
+            - lib/waypoints/autopaginate.js
+            - lib/custom-form-elements
+            - lib/jquery.fileinput.js
+            - course
+            - dashboard
+            - document
+            - post
+            - user
+            - profile
+            - main
+            - lightbox
+      stylesheet:                          # stylesheets configuration section
+        enabled: true                      # status of optimization
+        class: npOptimizerStylesheet       # the stylesheet optimizer class to use
+        params:                            # optimizer class configuration
+          driver: Cssmin                   # stylesheet optimization driver name
+          destination: /css/optimized.css  # destination path for optimized .css file
+          timestamp: true                  # adds a timestamp to the combined file url
+          files:                           # list of css assets to optimize and combine
+            - layout
+            - left-nav
+            - main
+            - form
+            - dd
+            - jquery-ui-1.8.23.tabs.css
+            - uniform.default.css
+            - document
+            - lightbox
+
+  javascript:
+    lib_files:
+#      - lib/jquery-1.8.0.min.js             # jquery breaks when you add it to the optimized file. load separately. plus jquery + lib files won't change/no need to force reload.
+#      - lib/jquery-ui-1.8.23.tabs.min.js
+#      - lib/jquery.qtip-1.0.0-rc3.min.js
+#      - lib/waypoints/jquery.waypoints.min.js
+#      - lib/jquery.uniform.min.js
+#      - lib/slides.jquery.js
+#      - lib/autosize/jquery.autosize.min.js
+
+
+# default values
+all:
+  sf_guard_plugin:
+    algorithm_callable: md5
+    success_signin_url: '@dashboard'
+    failure_signin_url: '@homepage'
+    success_signout_url: '@homepage'
+    remember_key_expiration_age: 25920000   # 30 days in seconds
+    remember_cookie_name: sfRemember
+    max_file_size: 104857600
+
+  sfApplyPlugin:
+    reset_subject: "Reset Your Password"
+    from:
+      email: "no-reply@wikigrads.com"
+      fullname: "WikiGrads"
+    first_user: "strngr.name@gmail.com"
+
+    afterLogin: '@dashboard'
+
+    register_email: '.com'
+    add_check_enabled: false
+
+  flash:
+    course_secure: You must be a student of this course to see the course information.
+
+  error:
+    invalid_email: Only school emails are accepted
+
+  address:
+    noreply: no-reply@wikigrads.com
+    contact: wikigrads@wikigrads.com
+    feedback: management@wikigrads.com
+
+  mail:
+    apply:
+      subject: "Welcome to WikiGrads confirmation"
+    wikimate_confirm:
+      subject: "WikiMate confirmation"
+
+  linkDataThumbnail:
+    width: 200
+    height: 200
